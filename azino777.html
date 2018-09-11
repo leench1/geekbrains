@@ -13,6 +13,7 @@
 
 		var sum = 0;
 
+//считаем карты кроме тузов
 		for (var i = 0; i < hand.length; i++) {
 			var card = hand[i];
 			if (card != 'A') {
@@ -23,7 +24,8 @@
 				}
 			}
 		}
-		
+
+//туз считается как 1, есл текущая сумма больше 10, иначе - как 11		
 		for (var i = 0; i < hand.length; i++) {
 			var  card = hand[i];
 			if (card == 'A') {
@@ -38,8 +40,30 @@
 		return sum;
 	}
 
+	function getStatus() {
+		return 'Дилер: ' + dealer.join(' ') + 'Игрок: ' + player.join(' ') + ',';
+	}
+
+
+
 	var dealer = [getCard()];
 	var player = [getCard(), getCard()];
+	var answer = ''; 
+
+		do {
+			answer = prompt(getStatus() + 'Хотите еще карту? 1 - да, иначе - нет');
+//сдаем карту игроку или прекращаем игру
+		if (answer == '1') {
+			player.push(getCard());
+		}
+
+		alert(getStatus());
+		} while (answer == '1');
+
+
+
+
+
 
 	alert('Дилер: ' + dealer.join(' ') + ' Игрок: ' + player.join(' '));
 	alert('Текущая сумма карт у игрока : ' + getSum(player));
