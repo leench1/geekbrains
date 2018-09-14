@@ -44,29 +44,53 @@
 		return 'Дилер: ' + dealer.join(' ') + 'Игрок: ' + player.join(' ') + ',';
 	}
 
-
-
 	var dealer = [getCard()];
 	var player = [getCard(), getCard()];
 	var answer = ''; 
+
+	if (getSum(player) == 21) {
+		alert('Вот так удача БЖ на раздаче ! ');
+	} else {
+		var answer = '';
 
 		do {
 			answer = prompt(getStatus() + 'Хотите еще карту? 1 - да, иначе - нет');
 //сдаем карту игроку или прекращаем игру
 		if (answer == '1') {
 			player.push(getCard());
+
+//проверяем нет ли у игрока перебора или выйгрыша
+		sum = getSum(player);
+		if (sum > 21) {
+			alert('Перебооор' + getStatus());
+			break;
+	}	else if (sum == 21) {
+			alert('Black JAAACK' + getStatus());
+			break;
+			}
+		} else {
+//dealer game 
+			while (getSum(dealer) < 17) {
+				dealer.push(getCard());
+			};
+
+			var sumDealer = getSum(dealer);
+			var sumPlayer = getSum(player);
+
+			if (sumDealer == 21) {
+				alert ('Дилер победил у него ОЧКО !' + getStatus());
+			} else if (sumDealer > 21) {
+				alert('У дилер перебор' + getStatus());
+			} else if (sumDealer == sumPlayer) {
+				alert ('Ничья!' + getStatus());
+			} else if (sumPlayer > sumDealer) {
+				alert ('Игрок выйграл !' + getStatus());
+			} else {
+				alert ('Проиграл игрок !' + getStatus());
+			}
 		}
 
-		alert(getStatus());
 		} while (answer == '1');
-
-
-
-
-
-
-	alert('Дилер: ' + dealer.join(' ') + ' Игрок: ' + player.join(' '));
-	alert('Текущая сумма карт у игрока : ' + getSum(player));
-
+	}
 
 </script>
