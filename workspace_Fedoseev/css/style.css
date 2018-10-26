@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.headings {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    ;
+}
+
+#description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+#detailed {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+#properties {
+    color: brown;
+    font-family: fantasy;
+    font-weight: 600;
+    line-height: 20px;
+    list-style-image: url(../img/marker.png);
+}
+
+#properties li > ul {
+    list-style-image: url(../img/marker_2.png);
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 20px;
+    font-size: 16px;
+}
+
+textarea {
+    font-style: italic;
+    font-size: 16px;
+}
+
+input[value] {
+    color: green;
+}
+
+.img_product {
+    border: 3px solid brown;
+}
+
+iframe {
+    width: 800px;
+    height: 500px;
+}
+
+footer p {
+    text-align: right;
+}
