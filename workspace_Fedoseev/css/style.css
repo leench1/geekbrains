@@ -1,9 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: #DCDCDC;
 }
 
 h1 {
     text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 p::first-letter {
@@ -17,6 +40,9 @@ header {
     background-repeat: no-repeat;
     background-position: 0% 20%;
     background-size: 85px 74px;
+    height: 110px;
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 #menu {
@@ -25,6 +51,13 @@ header {
     left: 50px;
     top: 10px;
     padding: 5px 50px;
+    float: right;
+}
+
+#menu li {
+    float: left;
+    margin: 20px 15px;
+
 }
 
 #menu li a {
@@ -33,23 +66,25 @@ header {
     font-size: 18px;
 }
 
+.clearFix {
+    clear: both;
+    margin-top: 95px;
+}
+
 #menu li a:visited {
     color: black;
 }
 
-#index:hover::after {
+#index:hover {
     color: #4682B4;
-    content: " >> Переход на главную страницу";
 }
 
-#catalog:hover::after {
+#catalog:hover {
     color: #4682B4;
-    content: " >> Переход на страницу с каталогом продукции";
 }
 
-#contacts:hover::after {
+#contacts:hover {
     color: #4682B4;
-    content: " >> Переход на страницу с контактами";
 }
 
 #menu li a:hover {
@@ -128,12 +163,21 @@ input[value] {
 }
 
 iframe {
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 347px;
 }
 
 footer {
+    height: 100px;
+    background-color: dimgray;
+    flex: 0 0 auto;
+}
+
+.copyRight {
     text-align: right;
+    padding-top: 35px;
+    padding-right: 50px;
+    color: white;
 }
 
 #tableProperties {
@@ -151,18 +195,15 @@ footer {
     height: 50px;
 }
 
-.test {
-    border-collapse: collapse;
+.catalogProducts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 10px;
+}
+
+.linkProduct {
     text-align: center;
-}
-
-.test td {
-    border: 1px solid red;
-    width: 45px;
-    
-}
-
-.first_tr {
-    background: #F4A460;
-    height: 55px;
 }
