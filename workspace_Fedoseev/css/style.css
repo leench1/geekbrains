@@ -1,13 +1,30 @@
 body {
-    background-color: #f8f8f8;
+    background-color: #DCDCDC;
 }
 
 h1 {
     text-align: center;
 }
 
+p::first-letter {
+    font-size: 30px;
+    color: brown;
+    font-family: cursive;
+}
+
+header {
+    background-image: url(../img/220px-Steelseries-logo.png);
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    background-size: 85px 74px;
+}
+
 #menu {
     list-style-type: none;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    padding: 5px 50px;
 }
 
 #menu li a {
@@ -15,6 +32,35 @@ h1 {
     font-family: sans-serif;
     font-size: 18px;
 }
+
+#menu li a:visited {
+    color: black;
+}
+
+#index:hover::after {
+    color: #4682B4;
+    content: " >> Переход на главную страницу";
+}
+
+#catalog:hover::after {
+    color: #4682B4;
+    content: " >> Переход на страницу с каталогом продукции";
+}
+
+#contacts:hover::after {
+    color: #4682B4;
+    content: " >> Переход на страницу с контактами";
+}
+
+#menu li a:hover {
+    color: #FF4500;
+}
+
+#menu li a:link {
+    color: dimgray;
+}
+
+
 
 .headings {
     color: black;
@@ -55,11 +101,18 @@ input[type="text"] {
     width: 300px;
     height: 20px;
     font-size: 16px;
+    text-transform: capitalize;
+}
+
+input[placeholder="Email"]:focus {
+    color: white;
+    background-color: black;
 }
 
 textarea {
     font-style: italic;
     font-size: 16px;
+    text-transform: capitalize;
 }
 
 input[value] {
@@ -70,11 +123,46 @@ input[value] {
     border: 3px solid brown;
 }
 
+.img_product:hover {
+    border: 3px solid transparent;
+}
+
 iframe {
     width: 800px;
     height: 500px;
 }
 
-footer p {
+footer {
     text-align: right;
+}
+
+#tableProperties {
+    border-collapse: collapse;
+}
+
+#tableProperties td:nth-child(2) {
+    width: 500px;
+    text-align: center;
+}
+
+#tableProperties td {
+    border: 2px solid #1E90FF;
+    width: 150px;
+    height: 50px;
+}
+
+.test {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.test td {
+    border: 1px solid red;
+    width: 45px;
+    
+}
+
+.first_tr {
+    background: #F4A460;
+    height: 55px;
 }
