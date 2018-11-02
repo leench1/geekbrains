@@ -16,6 +16,14 @@ h1 {
     text-align: center;
 }
 
+.indexText {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 28px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -27,12 +35,7 @@ h1 {
 main {
     flex: 1 0 auto;
     margin-top: 20px;
-}
-
-p::first-letter {
-    font-size: 30px;
-    color: brown;
-    font-family: cursive;
+    margin-bottom: 20px;
 }
 
 header {
@@ -102,41 +105,40 @@ header {
 
 .headings {
     color: black;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 21px;
+    font-weight: 600;
     background-color: #eaeaea;
     margin: 10px;
+    text-align: center;
 }
 
 .img_product {
     display: block;
     float: left;
+    margin-right: 12px;
+    margin-bottom: 12px
 }
 
 .description {
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .enginePO {
     clear: both;
 }
 
-.test {
+.aboutPO {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.characteristicrTable {
     clear: both;
 }
-/*#description {
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-    float: left;
-}*/
 
-#detailed {
-    color: #484343;
+.detailed {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -146,13 +148,14 @@ header {
 #properties {
     color: brown;
     font-family: fantasy;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 20px;
     list-style-image: url(../img/marker.png);
 }
 
 #properties li > ul {
     list-style-image: url(../img/marker_2.png);
+    margin-left: 25px;
 }
 
 input[type="text"] {
@@ -213,6 +216,7 @@ footer {
 
 #tableProperties {
     border-collapse: collapse;
+    margin: 0 auto;
 }
 
 #tableProperties td:nth-child(2) {
@@ -224,16 +228,22 @@ footer {
     border: 2px solid #1E90FF;
     width: 150px;
     height: 50px;
+    padding-left: 10px;
 }
 
 .catalogProducts {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 7%;
 }
 
 .product {
     margin: 10px;
+}
+
+.product:hover {
+    border: 1px solid #61aeff;
 }
 
 .linkProduct {
@@ -248,4 +258,28 @@ footer {
 
 .linkProduct a:hover {
     color: #FF4500;
+}
+
+.nameProduct {
+    display: inline-block;
+}
+
+.byuButton {
+    float: right;
+    width: 75px;
+    height: 45px;
+    margin-top: -10px;
+}
+
+.byuButton[value='Купить'] {
+    color: dimgray;
+}
+
+.byuButton[onclick] {
+    color: dimgray;
+}
+
+.byuButton:hover {
+    background-color: dimgray;
+    color: antiquewhite;
 }
