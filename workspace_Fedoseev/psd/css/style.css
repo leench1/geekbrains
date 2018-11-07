@@ -36,17 +36,29 @@ header {
 
 .menu li {
     float: left;
-    padding: 15px;
+    margin: 15px;
+    
     list-style-type: none;
-
 }
 
+
+.menu li a {
+     border: 2px solid  transparent;
+    padding: 10px;
+}
 .menu li a:link {
     color: white;
 }
 
 .menu li a:visited {
     color: whitesmoke;
+}
+
+.menu li a:hover {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+
 }
 
 .menu li a {
@@ -76,11 +88,18 @@ header {
 .logo p {
     font-family: Roboto;
     font-size: 18px;
-    margin-left: 105%;
+    margin-left: 115%;
     letter-spacing: 4px
 }
 
-.eTimer {
-    
+.timer {
+    width: 500px;
+    height: 69px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%
 }
 
+.ggg {
+    border: 2px solid red;
+}
