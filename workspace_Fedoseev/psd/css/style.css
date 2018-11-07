@@ -124,3 +124,40 @@ footer {}
 .ggg {
     border: 2px solid red;
 }
+
+form {
+    position: relative;
+    width: 300px;
+    
+    background-color: white;
+    float: right;
+    
+}
+
+form p {
+    padding-top: 15px;
+    text-align: center;
+    font-family: Roboto-Bold;
+    font-size: 22px;
+}
+
+form .hurry {
+    font-size: 10pt;
+    text-align: center;
+    font-family: Roboto-Thin;
+    padding-bottom: 10px;
+}
+input {
+    width: 91%;
+    height: 35px;
+    margin-left: 2%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background-color: #90d23d;
+    font-family: Roboto-Bold;
+    font-size: 20pt;
+    color: white;margin-left: 0;
+}
