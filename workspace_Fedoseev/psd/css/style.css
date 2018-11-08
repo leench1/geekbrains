@@ -196,10 +196,14 @@ input[type="submit"] {
     display: flex;
     margin: 0 auto;
     width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .vectorObject {
     margin: 10px;
+    width: 31%;
 }
 
 .headingText {
@@ -294,4 +298,26 @@ table tr:last-child td:last-child {
     font-size: 12px;
     margin-top: 2%;
     text-align: center;
+}
+.eliteBadge {
+    position: relative;
+    margin-top: 5%;
+    background-image: url(../img/Rectangle%205.png);
+    background-size: 100% 100%;
+    height: 600px;
+    
+}
+
+.img1 {
+    position: absolute;
+    top: -7%; left: 5%;
+    height: 300px;
+}
+
+.tekst {
+    position: relative;
+    float: right;
+    color: white;
+    padding-right: 10%;
+    padding-top: 15%;
 }
