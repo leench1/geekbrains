@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
     font-family: Roboto-Bold;
     src: url(../fonts/Roboto-Bold.ttf);
 }
@@ -37,6 +42,7 @@ body {
     flex-direction: column;
 }
 
+/* Стили header'a*/
 .header {
     background-image: url(../img/header.png);
     background-repeat: no-repeat;
@@ -134,6 +140,14 @@ body {
     margin-top: -180px;
 }
 
+/* Конец стилей header'a*/
+
+/* Стили main'a*/
+
+.main {
+    flex: 1 0 auto;
+}
+
 form p {
     padding-top: 15px;
     text-align: center;
@@ -167,29 +181,19 @@ input[type="submit"] {
     color: white;
 }
 
-.main {
-    flex: 1 0 auto;
-}
-
-.footer {
-    width: 100%;
-    height: 250px;
-    flex: 0 0 auto;
-    background-color: #90d23d;
-}
-
 .welcom {
     width: 550px;
-    margin-left: 10%;
+    margin-left: 15%;
     font-family: Roboto-light;
     font-size: 14px;
     line-height: 17px;
+    color: #242424;
     margin-bottom: 8%;
 }
 
 .welcomeHeading {
     font-family: Roboto-Black;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .eventGroup {
@@ -198,7 +202,6 @@ input[type="submit"] {
     width: 80%;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .vectorObject {
@@ -206,21 +209,10 @@ input[type="submit"] {
     width: 31%;
 }
 
-.headingText {
+.vectorObject p {
     font-family: Roboto-Black;
     font-size: 25px;
     text-align: center;
-}
-
-.textVectorImg {
-    font-family: Roboto-light;
-    text-align: center;
-}
-
-.vectorImg img {
-    display: block;
-    height: 200px;
-    margin: 0 auto;
 }
 
 .eventShedule {
@@ -284,40 +276,310 @@ table tr:last-child td:last-child {
     font-weight: bold;
     font-size: 20px;
     background: #ffffff;
-    margin-right: 2px;
+    margin-right: 7px;
+    border: 0;
 }
 
 .eventShedule td {
     vertical-align: middle;
 }
 
+.textVectorImg {
+    font-family: Roboto-light;
+    text-align: center;
+    color: #242424;
+}
+
+.vectorImg img {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+
 .textAftertable {
     width: 780px;
     margin: 0 auto;
     font-family: Roboto-light;
+    color: #242424;
     font-size: 12px;
     margin-top: 2%;
     text-align: center;
 }
+
 .eliteBadge {
     position: relative;
     margin-top: 5%;
     background-image: url(../img/Rectangle%205.png);
     background-size: 100% 100%;
     height: 600px;
-    
+
 }
 
-.img1 {
+.envato {
     position: absolute;
-    top: -7%; left: 5%;
+    top: -7%;
+    left: 5%;
     height: 300px;
 }
 
-.tekst {
-    position: relative;
-    float: right;
+.headingElites {
+    font-family: Roboto-Black;
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 5%;
+    top: 19%;
     color: white;
-    padding-right: 10%;
-    padding-top: 15%;
+
+}
+
+.textElites {
+    width: 50%;
+    font-family: Roboto-light;
+    font-size: 14px;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    color: white;
+    text-align: right;
+}
+
+.buttonBring {
+    position: absolute;
+    right: 12%;
+    top: 65%;
+
+}
+
+.buttonBring input {
+    height: 55px;
+    width: 200px;
+    background-color: #90d23d;
+    font-family: Roboto-Regular;
+    color: white;
+    font-size: 18px;
+    border: 0;
+}
+
+.speakers {
+    margin-top: 10%;
+    margin-bottom: 4%;
+    margin-left: 15%;
+    font-family: Roboto-light;
+    font-size: 14px;
+    width: 46%;
+}
+
+.speakers p {
+    font-family: Roboto-Black;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.tableHand {
+    width: 876px;
+    height: 870px;
+    margin: 0 auto;
+}
+
+.block1 {
+    float: left;
+    margin: 20px;
+    border: 0px;
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    background-color: #90d23d;
+}
+
+.block2 {
+    float: left;
+    margin: 20px;
+    border: 0px;
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    background-color: #46bc09;
+}
+
+.block2 p {
+    color: #fefefe;
+    width: 160px;
+    font-family: Roboto-light;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+
+.block2 p:first-child {
+    color: #fefefe;
+    font-family: Roboto-Black;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.line {
+    width: 83px;
+    height: 3px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.pic {
+    display: flex;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.pic1 {
+    margin: 3px;
+}
+
+.blockimg {
+    margin: 20px;
+    float: left;
+    height: 250px;
+    width: 250px;
+    background-image: url(../img/Vector%20Smart%20Object-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.sponsor {
+    position: relative;
+    margin-top: 5%;
+    background-image: url(../img/Rectangle%205.png);
+    background-size: 100% 100%;
+    height: 600px;
+    width: 100%;
+}
+
+
+
+.headingSponsor {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    font-family: Roboto-Black;
+    color: white;
+    font-size: 40px;
+}
+
+.textSponsor {
+    font-family: Roboto-light;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 250px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.sponsorLogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 350px;
+}
+
+.logoSponsor {
+    margin: 50px;
+}
+
+.pastEvents {
+    font-family: Roboto-Black;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-left: 15%;
+    height: 
+}
+
+.textPastEvents {
+    font-family: Roboto-light;
+    color: #242424;
+    font-size: 14px;
+    width: 47%;
+    margin-left: 15%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.colorQuad {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.quadBlue {
+    background-color: #3d6ed2;
+    width: 500px;
+    height: 316px;
+    float: left;
+}
+
+.quadGreen {
+    background-color: #90d23d;
+    float: left;
+    width: 470px;
+    height: 316px;
+}
+
+.quadOrange {
+    background-color: #ff9d00;
+    clear: both;
+    float: left;
+    width: 400px;
+    height: 316px; 
+}
+
+.quadBrown {
+    float: left;
+    background-color: #e0652a;
+    width: 570px;
+    height: 316px; 
+}
+
+.divViewMore {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.divViewMore input {
+    width: 200px;
+}
+    
+/* Стили footer'a*/
+.footer {
+    width: 100%;
+    height: 220px;
+    flex: 0 0 auto;
+    background-color: #90d23d;
+}
+
+.copyRight {
+    font-family: Roboto-light;
+    font-weight: 300;
+    color: white;
+    width: 27%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.socialContact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.socialImg {
+    margin: 5px;
 }
