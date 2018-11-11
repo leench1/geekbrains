@@ -28,10 +28,10 @@
     src: url(../fonts/Roboto-Thin.ttf);
 }
 
-
 html,
 body {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -42,13 +42,14 @@ body {
     flex-direction: column;
 }
 
+
 /* Стили header'a*/
+
 .header {
     background-image: url(../img/header.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 755px;
-
 }
 
 .menu {
@@ -90,16 +91,20 @@ body {
     font-size: 15px;
 }
 
-.logo {
-    height: 59px;
-    width: 54px;
-    padding-left: 7%;
-    padding-top: 2%;
-    color: #81b052;
+.bangladesh {
+    width: 212px;
+    height: 70px;
     float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+
 }
 
-.imgLogo {
+.logo {
+    color: #81b052;
+}
+
+.logo img {
     float: left;
 }
 
@@ -114,9 +119,8 @@ body {
 .logo p {
     font-family: Roboto-Bold;
     font-size: 18px;
-    margin-left: 115%;
     letter-spacing: 4px;
-    margin-top: -120%;
+
 }
 
 .timer {
@@ -138,9 +142,12 @@ body {
     border: 2px inset grey;
     margin-right: 10%;
     margin-top: -180px;
+    margin-bottom: 15px;
 }
 
+
 /* Конец стилей header'a*/
+
 
 /* Стили main'a*/
 
@@ -163,11 +170,12 @@ form .hurry {
     padding-bottom: 10px;
 }
 
-input {
+.sign {
     width: 91%;
     height: 35px;
     margin-left: 2%;
     border-radius: 10px;
+    padding-left: 5px;
 }
 
 input[type="submit"] {
@@ -182,7 +190,7 @@ input[type="submit"] {
 }
 
 .welcom {
-    width: 550px;
+    width: 30%;
     margin-left: 15%;
     font-family: Roboto-light;
     font-size: 14px;
@@ -196,7 +204,7 @@ input[type="submit"] {
     font-size: 40px;
 }
 
-.eventGroup {
+#eventGroup {
     display: flex;
     margin: 0 auto;
     width: 80%;
@@ -206,7 +214,8 @@ input[type="submit"] {
 
 .vectorObject {
     margin: 10px;
-    width: 31%;
+    width: 300px;
+    flex: 1;
 }
 
 .vectorObject p {
@@ -215,6 +224,21 @@ input[type="submit"] {
     text-align: center;
 }
 
+.textVectorImg {
+    font-family: Roboto-light;
+    text-align: center;
+    color: #242424;
+}
+
+.vectorImg img {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.eventTable {
+    overflow-x: auto;
+}
 .eventShedule {
     margin: 0 auto;
     width: 855px;
@@ -271,6 +295,8 @@ table tr:last-child td:last-child {
 }
 
 .button {
+    width: 80%;
+    height: 60%;
     text-align: center;
     border-radius: 100px;
     font-weight: bold;
@@ -284,20 +310,8 @@ table tr:last-child td:last-child {
     vertical-align: middle;
 }
 
-.textVectorImg {
-    font-family: Roboto-light;
-    text-align: center;
-    color: #242424;
-}
-
-.vectorImg img {
-    display: block;
-    height: 200px;
-    margin: 0 auto;
-}
-
 .textAftertable {
-    width: 780px;
+    width: 40%;
     margin: 0 auto;
     font-family: Roboto-light;
     color: #242424;
@@ -307,18 +321,20 @@ table tr:last-child td:last-child {
 }
 
 .eliteBadge {
-    position: relative;
+
     margin-top: 5%;
     background-image: url(../img/Rectangle%205.png);
     background-size: 100% 100%;
     height: 600px;
-
 }
 
 .envato {
-    position: absolute;
-    top: -7%;
-    left: 5%;
+    float: left;
+    margin-left: 50px;
+    margin-top: -40px;
+}
+
+.envato img {
     height: 300px;
 }
 
@@ -326,29 +342,30 @@ table tr:last-child td:last-child {
     font-family: Roboto-Black;
     font-size: 40px;
     letter-spacing: 2px;
-    position: absolute;
-    right: 5%;
-    top: 19%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-bottom: 35px;
     color: white;
-
 }
 
 .textElites {
-    width: 50%;
+    clear: right;
+    width: 40%;
+    overflow: auto;
     font-family: Roboto-light;
     font-size: 14px;
-    position: absolute;
-    right: 5%;
-    top: 30%;
+    float: right;
+    margin-right: 50px;
     color: white;
     text-align: right;
 }
 
 .buttonBring {
-    position: absolute;
-    right: 12%;
-    top: 65%;
-
+    float: right;
+    clear: both;
+    margin-right: 200px;
+    margin-top: 35px;
 }
 
 .buttonBring input {
@@ -359,27 +376,37 @@ table tr:last-child td:last-child {
     color: white;
     font-size: 18px;
     border: 0;
+    border-radius: 15px;
 }
 
-.speakers {
+#speakers {
+    clear: both;
     margin-top: 10%;
     margin-bottom: 4%;
     margin-left: 15%;
     font-family: Roboto-light;
     font-size: 14px;
-    width: 46%;
+    width: 38%;
 }
 
-.speakers p {
+#speakers p {
     font-family: Roboto-Black;
     font-size: 40px;
     padding-bottom: 25px;
 }
 
 .tableHand {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.center {
     width: 876px;
-    height: 870px;
-    margin: 0 auto;
+
 }
 
 .block1 {
@@ -447,23 +474,19 @@ table tr:last-child td:last-child {
     background-position: center;
 }
 
-
-.sponsor {
-    position: relative;
+#sponsor {
     margin-top: 5%;
     background-image: url(../img/Rectangle%205.png);
     background-size: 100% 100%;
-    height: 600px;
+    height: auto;
     width: 100%;
 }
 
-
-
 .headingSponsor {
-    position: absolute;
     width: 100%;
+    padding-bottom: 40px;
+    padding-top: 80px;
     text-align: center;
-    top: 25%;
     font-family: Roboto-Black;
     color: white;
     font-size: 40px;
@@ -472,8 +495,6 @@ table tr:last-child td:last-child {
 .textSponsor {
     font-family: Roboto-light;
     font-size: 14px;
-    position: absolute;
-    margin-top: 250px;
     width: 100%;
     left: 0;
     right: 0;
@@ -485,35 +506,40 @@ table tr:last-child td:last-child {
 
 .sponsorLogo {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 350px;
 }
 
 .logoSponsor {
     margin: 50px;
 }
 
-.pastEvents {
+#pastEvents {
     font-family: Roboto-Black;
     font-size: 40px;
     margin-top: 10%;
     margin-left: 15%;
-    height: 
+    height:
 }
 
 .textPastEvents {
     font-family: Roboto-light;
     color: #242424;
-    font-size: 14px;
-    width: 47%;
+    font-size: 13px;
+    width: 35%;
     margin-left: 15%;
     margin-top: 25px;
     margin-bottom: 50px;
 }
 
 .colorQuad {
-    width: 970px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
 }
 
 .quadBlue {
@@ -535,26 +561,139 @@ table tr:last-child td:last-child {
     clear: both;
     float: left;
     width: 400px;
-    height: 316px; 
+    height: 316px;
 }
 
 .quadBrown {
     float: left;
     background-color: #e0652a;
     width: 570px;
-    height: 316px; 
+    height: 316px;
 }
 
-.divViewMore {
+#divViewMore {
     width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.buttonViewMore {
+    border-radius: 15px;
+    background-color: #373737;
+    width: 200px;
+    height: 55px;
+    color: white;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    text-align: center;
+    display: block;
     margin: 0 auto;
 }
 
-.divViewMore input {
-    width: 200px;
-}
+.messages {
+    background-image: url(../img/Map.png);
+    background-size: 100% 120%;
+    height: auto;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
     
+}
+
+.formMessages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.imgForm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formMessages p {
+    font-family: Roboto-light;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.buttonViewMap {
+    height: 50px;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    background-color: #90d23d;
+    border: 0;
+    border-radius: 15px;
+    font-family: Roboto-Regular;
+    color: white;
+    font-size: 22px;
+}
+
+.left {
+    height: 351px;
+    width: 51%;
+    flex: 1;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.right {
+    width: 50%;
+    height: 351px;
+    flex: 1;
+}
+
+.emailInput {
+    margin-top: 45px;
+    margin-left: 4%;
+    margin-bottom: 30px;
+}
+
+.emailForMap {
+    width: 80%;
+    height: 45px;
+    border: 2px solid #90d23d;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+
+.textMessages {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 35px;
+}
+
+.message {
+    width: 78%;
+    height: 100%;
+    margin-left: 4%;
+    margin-bottom: 50px;
+    border: 2px solid #bebebe;
+    border-radius: 5px;
+}
+
+.buttonSend {
+    width: 80%;
+    height: 50px;
+    margin-left: 4%;
+    color: white;
+    background-color: #373737;
+    font-family: Roboto-Regular;
+    font-size: 22px;
+    border: 0;
+    border-radius: 15px;
+}
+
 /* Стили footer'a*/
+
 .footer {
     width: 100%;
     height: 220px;
@@ -582,4 +721,18 @@ table tr:last-child td:last-child {
 
 .socialImg {
     margin: 5px;
+}
+/* Конец стилей footer*/
+
+
+@media screen and (max-width: 939px) {
+    
+    .textElites {
+        color: black;
+    }
+    
+    .headingElites {
+        margin-top: 10px;
+    }
+    
 }
