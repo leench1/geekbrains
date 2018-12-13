@@ -1,16 +1,21 @@
 * {
     margin: 0;
-    padding: 0:
+    padding: 0;
 }
 
 html,
 body {
     width: 1280px;
+    
+}
+
+container {
+    width: 100%;
     margin: 0 auto;
 }
 
 html {
-    height: 100%:
+    height: 100%;
 }
 
 header {
@@ -21,7 +26,7 @@ header {
 }
 
 .leftHead {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     float: left;
     width: 40%;
     height: 50px;
@@ -54,19 +59,19 @@ header {
     width: 1280px;
 }
 
+.about h2 {
+    color: #445161;
+    margin: 49px 0 0 50px;
+}
+
 .leftAbout {
     width: 50%;
     height: 50px;
     float: left;
 }
 
-.leftAbout h2 {
-    color: #445161;
-    margin: 49px 0 0 50px;
-}
-
 .firstParagraph {
-    margin: 20px 0px 20px 50px;
+    margin: 20px 0 20px 50px;
     line-height: 20px;
     font-family: Arial;
     font-size: 16px;
@@ -75,9 +80,9 @@ header {
 
 .secondParagraph {
     line-height: 20px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 16px;
-    margin: 0px 0px 20px 50px;
+    margin: 0 0 20px 50px;
     color: #333333;
 }
 
