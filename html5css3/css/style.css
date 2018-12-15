@@ -3,100 +3,280 @@
     padding: 0;
 }
 
-html,
-body {
+.content {
     width: 1280px;
-    
-}
-
-container {
-    width: 100%;
     margin: 0 auto;
-}
-
-html {
-    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    width: 1280px;
     height: 323px;
     background-color: #445161;
     color: white;
+    padding: 30px;
 }
 
-.leftHead {
-    font-family: Arial, sans-serif;
+header .textHeader h1 {
+    padding: 20px;
     float: left;
-    width: 40%;
-    height: 50px;
-    margin-top: 54px;
-    margin-left: 100px;
+    font-size: 60px;
+    font-weight: 400;
+}
 
+header .textHeader ul {
+    margin-left: 20px;
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    clear: both;
+}
+
+header img {
+    float: right;
+    margin-right: 20px;
+    margin-top: -60px;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        width: 960px;
+    }
+    header {
+        width: 960px;
+        margin: 0 auto;
+    }
+    header .textHeader h1 {
+        font-size: 50px;
+    }
+    header .textHeader ul {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 720px;
+    }
+    header {
+        padding-left: 0;
+        padding-right: 0;
+        width: 700px;
+        height: 460px;
+    }
+    .textHeader {
+        width: 54%;
+        margin: 0 auto;
+    }
+    header .textHeader h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    header .textHeader ul {
+        margin: 0;
+    }
+    header img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        width: 540px;
+    }
+    header {
+        padding-left: 0;
+        padding-right: 0;
+        width: 520px;
+        height: 500px;
+    }
+    header .textHeader h1 {
+        font-size: 35px;
+    }
+    header .textHeader ul {
+        font-size: 15px;
+        padding-left: 0;
+    }
+    .characteristic {
+        width: 150%;
+    }
+    header img {
+        margin: 20px auto;
+    }
 }
 
 .characteristic {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+    list-style-image: url(../img/check_icon.png);
 }
 
-.characteristic li {
-    list-style-image: url(../img/check%20icon.png);
+.aboutProduct {
+    height: 333px;
 }
 
-.rightHead {
-    float: right;
-    width: 469px;
-    height: 214px;
-    background-color: white;
-    margin-top: 54px;
-    margin-right: 55px;
-}
-
-.about {
-    height: 323px;
-    width: 1280px;
-}
-
-.about h2 {
-    color: #445161;
-    margin: 49px 0 0 50px;
-}
-
-.leftAbout {
-    width: 50%;
-    height: 50px;
+.aboutHeader {
     float: left;
+    padding: 30px 0 0 30px;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.leftPart {
+    clear: both;
+    float: left;
+    padding: 30px;
+    width: 50%;
 }
 
 .firstParagraph {
-    margin: 20px 0 20px 50px;
-    line-height: 20px;
-    font-family: Arial;
-    font-size: 16px;
     color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 20px;
 }
 
 .secondParagraph {
-    line-height: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin: 0 0 20px 50px;
     color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-.rightAbout {
+.rightPart img {
     float: right;
-    width: 469px;
-    height: 214px;
-    background-color: #445161;
-    margin-top: 54px;
-    margin-right: 55px;
+    margin-top: -20px;
+    margin-right: 50px;
+}
+
+@media (max-width: 992px) {
+    .leftPart {
+        width: 48%;
+    }
+    .rightPart img {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutProduct {
+        height: 600px;
+        display: block;
+    }
+    .aboutHeader {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .leftPart {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .rightPart img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .dignity {
-    height: 323px;
-    width: 1280px;
-    background-color: #f5f5f5;;
+    background-color: #f5f5f5;
+    color: #333333;
+    height: 400px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.dignityHeader {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #445161;
+    padding: 30px 0 30px 0;
+}
+
+.dignityParagraph {
+    height: 50px;
+    margin: 0 auto;
+}
+
+.leftParagraph {
+    width: 45%;
+    float: left;
+    padding-left: 40px;
+}
+
+.paragraph {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.paragraph:nth-child(even) {
+    padding-bottom: 15px;
+}
+
+.paragraph:nth-child(odd) {
+    padding-bottom: 15px;
+}
+
+.paragraph::before {
+    content: url(../img/plus.png);
+    display: block;
+    height: 60px;
+    margin-left: -20px;
+    margin-right: 8px;
+    margin-top: 5px;
+    float: left;
+}
+
+.rightParagraph {
+    width: 48%;
+    padding-left: 40px;
+    float: left;
+}
+
+@media (max-width: 1200px) {
+    
+    .dignityParagraph {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .leftParagraph {
+        width: 40%
+    }
+    .rightParagraph {
+        width: 40%;
+    }
+    
+    .paragraph::before {
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .paragraph::before {
+        height: auto;
+    } .leftParagraph {
+        width: 80%;
+    }
+    .rightParagraph {
+        float: none;
+        width: 80%;
+    }
 }
