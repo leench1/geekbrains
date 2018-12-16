@@ -38,7 +38,13 @@ header img {
     margin-top: -60px;
 }
 
+/* media header*/
 @media (max-width: 1200px) {
+
+    header {
+        width: 1140px;
+    }
+
     .content {
         width: 1140px;
     }
@@ -48,13 +54,16 @@ header img {
     .content {
         width: 960px;
     }
+
     header {
         width: 960px;
         margin: 0 auto;
     }
+
     header .textHeader h1 {
         font-size: 50px;
     }
+
     header .textHeader ul {
         font-size: 15px;
     }
@@ -64,24 +73,28 @@ header img {
     .content {
         width: 720px;
     }
+
     header {
-        padding-left: 0;
-        padding-right: 0;
-        width: 700px;
+
+        width: 720px;
         height: 460px;
     }
+
     .textHeader {
         width: 54%;
         margin: 0 auto;
     }
+
     header .textHeader h1 {
         width: 100%;
         text-align: center;
         padding: 0;
     }
+
     header .textHeader ul {
         margin: 0;
     }
+
     header img {
         float: none;
         display: block;
@@ -90,30 +103,37 @@ header img {
     }
 }
 
+/*
 @media (max-width: 576px) {
     .content {
-        width: 540px;
+        width: 520px;
     }
+
     header {
         padding-left: 0;
         padding-right: 0;
         width: 520px;
         height: 500px;
     }
+
     header .textHeader h1 {
         font-size: 35px;
     }
+
     header .textHeader ul {
         font-size: 15px;
         padding-left: 0;
     }
+
     .characteristic {
         width: 150%;
     }
+
     header img {
         margin: 20px auto;
     }
 }
+*/
 
 .characteristic {
     padding-left: 30px;
@@ -123,11 +143,12 @@ header img {
 
 .aboutProduct {
     height: 333px;
+    padding: 30px;
 }
 
 .aboutHeader {
     float: left;
-    padding: 30px 0 0 30px;
+    padding: 20px 0 0 50px;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
@@ -161,29 +182,44 @@ header img {
     margin-right: 50px;
 }
 
-@media (max-width: 992px) {
-    .leftPart {
-        width: 48%;
+/* media about*/
+@media (max-width: 1200px) {
+    .aboutProduct {
+        width: 1140px;
     }
+}
+
+@media (max-width: 992px) {
+    .aboutProduct {
+        width: 960px;
+    }
+
+    .leftPart {
+        width: 45%;
+    }
+
     .rightPart img {
-        margin-right: 0;
+        margin-right: 30px;
     }
 }
 
 @media (max-width: 768px) {
     .aboutProduct {
-        height: 600px;
-        display: block;
+        width: 720px;
+        height: 550px;
     }
+
     .aboutHeader {
         width: 100%;
         text-align: center;
         padding-left: 0;
     }
+
     .leftPart {
         width: 90%;
         margin: 0 auto;
     }
+
     .rightPart img {
         float: none;
         display: block;
@@ -193,12 +229,19 @@ header img {
 }
 
 .dignity {
+    padding: 30px;
     background-color: #f5f5f5;
     color: #333333;
-    height: 400px;
+    height: 430px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.dignity::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 .dignityHeader {
@@ -207,16 +250,11 @@ header img {
     text-align: center;
     font-weight: 400;
     color: #445161;
-    padding: 30px 0 30px 0;
-}
-
-.dignityParagraph {
-    height: 50px;
-    margin: 0 auto;
+    padding: 20px 0 50px 0;
 }
 
 .leftParagraph {
-    width: 45%;
+    width: 48%;
     float: left;
     padding-left: 40px;
 }
@@ -246,37 +284,347 @@ header img {
 
 .rightParagraph {
     width: 48%;
-    padding-left: 40px;
+    padding-left: 8px;
     float: left;
 }
 
+.paragraph::before {
+    height: 80px;
+}
+
+/* media dignity*/
 @media (max-width: 1200px) {
-    
+
+    .dignity {
+        width: 1140px;
+        height: 485px;
+    }
+
     .dignityParagraph {
         width: 100%;
         margin: 0 auto;
     }
-    
+
     .leftParagraph {
-        width: 40%
+        width: 45%
     }
+
     .rightParagraph {
-        width: 40%;
+        width: 45%;
     }
-    
+
     .paragraph::before {
         height: 100px;
     }
 }
 
 @media (max-width: 992px) {
-    .paragraph::before {
-        height: auto;
-    } .leftParagraph {
-        width: 80%;
+
+    .dignity {
+        width: 960px;
+        height: 665px;
     }
+
+    .paragraph {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .paragraph::before {
+        height: 45px;
+    }
+
+    .leftParagraph {
+        width: 100%;
+        padding-left: 0;
+    }
+
     .rightParagraph {
         float: none;
-        width: 80%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dignity {
+        width: 720px;
+    }
+
+    .paragraph::before {
+        height: 45px;
+    }
+}
+
+.screenShots {
+    padding: 30px;
+}
+
+.screenShots::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.screenHeader {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #445161;
+    padding: 50px 0 50px 0;
+}
+
+.screenUnit {
+    width: 48%;
+}
+
+.screenUnit:nth-child(1n) {
+    float: left;
+    margin: 10px 10px 20px 10px;
+}
+
+.screenImg {
+    float: left;
+    margin-right: 10px;
+}
+
+.headerUnit {
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.textScreen {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+}
+
+/*media screen*/
+@media (max-width: 1200px) {
+    .screenShots {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .screenShots {
+        width: 960px;
+    }
+
+    .screenUnit {
+        width: 95%;
+        padding-left: 30px;
+    }
+
+    .textScreen {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .screenShots {
+        width: 720px;
+    }
+}
+
+.reviews {
+    padding: 30px;
+    background-color: #f5f5f5;
+    height: 350px;
+}
+
+.reviewUnit {
+    width: 48%;
+}
+
+.reviewUnit:nth-child(1n) {
+    float: left;
+    margin: 10px 10px 20px 10px;
+
+}
+
+.reviewHeader {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #445161;
+    padding: 20px 0 50px 0;
+}
+
+.reviewImg {
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.reviewText {
+    position: relative;
+    background-color: #ebebeb;
+    color: #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+}
+
+.reviewText::before {
+    position: absolute;
+    top: 27px;
+    left: -10px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #ebebeb;
+    transform: rotate(45deg);
+
+}
+
+.reviewAuthor {
+    background-color: #ebebeb;
+    margin-left: 100px;
+    padding-left: 20px;
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-style: italic;
+}
+
+/*media review*/
+
+@media (max-width: 1200px) {
+    .reviews {
+        width: 1140px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 992px) {
+    .reviews {
+        width: 960px;
+        height: 530px;
+    }
+
+    .reviewUnit {
+        width: 90%;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        width: 720px;
+        height: 560px;
+    }
+}
+
+.buyIt {
+    padding: 30px;
+}
+
+.buyHeader {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #445161;
+    padding: 20px 0 50px 0;
+}
+
+.buyCenter {
+    width: 990px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.buyUnit {
+    border: 2px solid #455062;
+    border-radius: 5px;
+    background-color: #455062;
+
+}
+
+.buyUnit h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.priceUnit {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    color: #455062;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.textUnit {
+    padding: 18px;
+    background-color: #455062;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.buyBtn {
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    background: #ffffff;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+}
+
+/*media buy*/
+
+@media (max-width: 1200px) {
+    .buyIt {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .buyIt {
+        width: 960px;
+    }
+    
+    .buyCenter {
+        width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .buyIt {
+        width: 720px;
+    }
+    
+    .buyCenter {
+        flex-direction: column;
+        
+        justify-content: center;
     }
 }
