@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: SocialIco;
+    src: url(../fonts/Socialico.ttf);
+}
+
 .content {
     width: 1280px;
     margin: 0 auto;
@@ -103,37 +108,9 @@ header img {
     }
 }
 
-/*
-@media (max-width: 576px) {
-    .content {
-        width: 520px;
-    }
-
-    header {
-        padding-left: 0;
-        padding-right: 0;
-        width: 520px;
-        height: 500px;
-    }
-
-    header .textHeader h1 {
-        font-size: 35px;
-    }
-
-    header .textHeader ul {
-        font-size: 15px;
-        padding-left: 0;
-    }
-
-    .characteristic {
-        width: 150%;
-    }
-
-    header img {
-        margin: 20px auto;
-    }
+main {
+    padding: 30px;
 }
-*/
 
 .characteristic {
     padding-left: 30px;
@@ -143,7 +120,6 @@ header img {
 
 .aboutProduct {
     height: 333px;
-    padding: 30px;
 }
 
 .aboutHeader {
@@ -229,7 +205,7 @@ header img {
 }
 
 .dignity {
-    padding: 30px;
+
     background-color: #f5f5f5;
     color: #333333;
     height: 430px;
@@ -250,7 +226,7 @@ header img {
     text-align: center;
     font-weight: 400;
     color: #445161;
-    padding: 20px 0 50px 0;
+    padding: 50px 0 50px 0;
 }
 
 .leftParagraph {
@@ -356,9 +332,7 @@ header img {
     }
 }
 
-.screenShots {
-    padding: 30px;
-}
+
 
 .screenShots::after {
     content: '';
@@ -433,7 +407,6 @@ header img {
 }
 
 .reviews {
-    padding: 30px;
     background-color: #f5f5f5;
     height: 350px;
 }
@@ -454,7 +427,7 @@ header img {
     text-align: center;
     font-weight: 400;
     color: #445161;
-    padding: 20px 0 50px 0;
+    padding: 50px 0 50px 0;
 }
 
 .reviewImg {
@@ -526,9 +499,6 @@ header img {
     }
 }
 
-.buyIt {
-    padding: 30px;
-}
 
 .buyHeader {
     font-size: 30px;
@@ -536,7 +506,7 @@ header img {
     text-align: center;
     font-weight: 400;
     color: #445161;
-    padding: 20px 0 50px 0;
+    padding: 50px 0 50px 0;
 }
 
 .buyCenter {
@@ -611,20 +581,209 @@ header img {
     .buyIt {
         width: 960px;
     }
-    
+
     .buyCenter {
         width: 960px;
     }
 }
 
 @media (max-width: 768px) {
+
     .buyIt {
         width: 720px;
     }
-    
+
+
     .buyCenter {
-        flex-direction: column;
-        
+        flex-direction: row;
+        width: 720px;
         justify-content: center;
+        align-items: flex-end;
+        margin: 0;
     }
+
+    .buyUnit {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .buyCenter {
+        display: block;
+    }
+}
+
+footer {
+    padding: 30px;
+    height: 510px;
+    background-color: #445161;
+    color: white;
+}
+
+.footerHeader {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    padding: 50px 0 50px 0;
+}
+
+.footerCentr .messege {
+    width: 500px;
+    margin-left: 9%;
+}
+
+.messege [type="text"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.messege [id="yourMessage"] {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 5px;
+    text-indent: 20px;
+    padding-top: 10px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.messege [type="submit"] {
+    border: 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    display: block;
+    color: #445162;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+.footerCentr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footerCentr form {
+    float: left;
+}
+
+.socialContacts {
+    float: right;
+    width: 33%;
+}
+
+.skype {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    background: url(../img/skype_icon.png) no-repeat left center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.icq {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    background: url(../img/icq_icon.png) no-repeat left center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.email {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    background: url(../img/email_icon.png) no-repeat left center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.phoneNumber {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    background: url(../img/phone_icon.png) no-repeat left center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.socialIcons {
+    font-family: Socialico,sans-serif;
+    clear: right;
+    font-size: 60px;
+}
+
+/*media footer*/
+
+@media (max-width: 1200px) {
+    footer {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        width: 960px;
+    }
+
+    .footerCentr .messege {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        width: 720px;
+    }
+
+    .footerCentr .messege {
+        width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    footer {
+        height: 700px;
+    }
+
+    .footerCentr .messege {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .socialContacts {
+        float: none;
+        clear: both;
+    }
+    
+}
+
+.copyright {
+    text-align: center;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
 }
