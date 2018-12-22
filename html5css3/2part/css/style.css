@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf)
+}
+
+.content {
+    display: grid;
+}
+
+header {
+    padding: 50px;
+}
+
+.headerRow {
+    grid-gap: 20px;
+    grid-template-columns: repeat (4, 100px);
+    grid-template-areas:
+        "headerLogo workTime mailUs callUs";
+
+    display: grid;
+}
+
+.headerLogo {
+    grid-area: headerLogo;
+}
+
+.workTime {
+    font-size: 15px;
+    line-height: 22px;
+    color: #6a6a6a;
+    grid-area: workTime;
+    font-family: OpenSans-Regular;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.mailUs {
+    grid-area: mailUs;
+}
+
+.callUs {
+    grid-area: callUs;
+}
