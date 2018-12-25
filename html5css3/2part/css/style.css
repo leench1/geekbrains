@@ -19,17 +19,17 @@
 }
 
 @font-face {
-    font-family: Montserrat Regular;
+    font-family: "Montserrat Regular";
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: Montserrat Medium;
+    font-family: "Montserrat Medium";
     src: url(../fonts/Montserrat-Medium.ttf);
 }
 
 @font-face {
-    font-family: Montserrat Bold;
+    font-family: "Montserrat Bold";
     src: url(../fonts/Montserrat-Bold.ttf);
 }
 
@@ -44,8 +44,10 @@ header {
 .headerRow {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-areas: "headerLogo workTime mailUs callUs";
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-template-areas:
+        "headerLogo workTime mailUs callUs";
 }
 
 .headerLogo {
@@ -57,10 +59,8 @@ header {
 }
 
 .workTime {
-    background-image: url(../img/clock.svg);
-    background-repeat: no-repeat;
+    background: url(../img/clock.svg) no-repeat left center;
     background-size: contain;
-    background-position: left;
     padding-left: 50px;
     font-size: 15px;
     line-height: 22px;
@@ -70,10 +70,8 @@ header {
 }
 
 .mailUs {
-    background-image: url(../img/email.svg);
-    background-repeat: no-repeat;
+    background: url(../img/email.svg) no-repeat left center;
     background-size: contain;
-    background-position: left;
     padding-left: 50px;
     grid-area: mailUs;
     font-size: 15px;
@@ -83,10 +81,8 @@ header {
 }
 
 .callUs {
-    background-image: url(../img/smartphone.svg);
-    background-repeat: no-repeat;
+    background: url(../img/smartphone.svg) no-repeat left center;
     background-size: contain;
-    background-position: left;
     padding-left: 50px;
     grid-area: callUs;
     font-size: 15px;
@@ -129,9 +125,8 @@ nav ul li a:hover {
     height: 20px;
     width: 20px;
     background-image: url(../img/facebook-letter-logo.svg);
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
+   
 }
 
 .googlePlus {
@@ -140,9 +135,7 @@ nav ul li a:hover {
     height: 20px;
     width: 20px;
     background-image: url(../img/google-plus-logo.svg);
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
 }
 
 .vk {
@@ -151,9 +144,7 @@ nav ul li a:hover {
     height: 20px;
     width: 20px;
     background-image: url(../img/vk-social-logotype.svg);
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
 }
 
 .youTube {
@@ -162,9 +153,8 @@ nav ul li a:hover {
     height: 20px;
     width: 20px;
     background-image: url(../img/youtube-logo.svg);
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
+
 }
 
 .linkId {
@@ -173,17 +163,14 @@ nav ul li a:hover {
     height: 20px;
     width: 20px;
     background-image: url(../img/linkedin-logo.svg);
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
 }
 
 .medicalImg {
     width: 100%;
     height: 640px;
-    background-image: url(../img/background_header.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/background_header.png) no-repeat center center;
+
 }
 
 .medicalPlanInside {
@@ -215,7 +202,7 @@ nav ul li a:hover {
 }
 
 .medicalHeader {
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
     font-size: 47.69px;
     color: #474747;
 }
@@ -261,7 +248,7 @@ nav ul li a:hover {
 }
 
 .unitHeader {
-    font-family: Montserrat Bold, sans-serif;
+    font-family: "Montserrat Bold", sans-serif;
     font-size: 30px;
     text-align: center;
     margin: 25px 0;
@@ -297,7 +284,7 @@ nav ul li a:hover {
 
 .whyChooseHeader {
     margin-top: 100px;
-    font-family: Montserrat Bold, sans-serif;
+    font-family: "Montserrat Bold", sans-serif;
     color: #494949;
     font-size: 45px;
     font-weight: 700;
@@ -307,7 +294,7 @@ nav ul li a:hover {
 .whyChooseText {
     width: 65%;
     margin: 30px auto;
-    font-family: OpenSans-Regular;
+    font-family: OpenSans-Regular,sans-serif;
     color: #6a6a6a;
     font-size: 16px;
     font-weight: 400;
@@ -316,7 +303,7 @@ nav ul li a:hover {
 }
 
 .whyUnitHeader {
-    font-family: Montserrat Bold;
+    font-family: "Montserrat Bold", sans-serif;
     color: #6f6f6e;
     font-size: 30px;
     font-weight: 700;
@@ -364,8 +351,7 @@ nav ul li a:hover {
 .achievements {
     width: 100%;
     height: 592px;
-    background-image: url(../img/SVC1-Urgent-Care.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/SVC1-Urgent-Care.jpg) no-repeat;
     background-size: cover;
     background-color: #1a9bdc;
     background-blend-mode: color-burn;
@@ -374,37 +360,30 @@ nav ul li a:hover {
 .img1 {
     width: 90px;
     height: 90px;
-    background: url(../img/achievement1.png);
+    background: url(../img/achievement1.png) no-repeat center center;
     background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 .img2 {
     width: 90px;
     height: 90px;
-    background: url(../img/achievement2.png);
+    background: url(../img/achievement2.png) no-repeat center center;
     background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 .img3 {
     width: 90px;
     height: 90px;
-    background: url(../img/achievement3.png);
+    background: url(../img/achievement3.png) no-repeat center center;
     background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+
 }
 
 .img4 {
     width: 90px;
     height: 90px;
-    background: url(../img/achievement4.png);
+    background: url(../img/achievement4.png) no-repeat center center;
     background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
 
@@ -422,7 +401,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
 }
 
 .achievementDigit {
@@ -458,7 +437,7 @@ nav ul li a:hover {
 
 .workHeader {
     grid-area: workHeader;
-    font-family: Montserrat Bold, sans-serif;
+    font-family: "Montserrat Bold", sans-serif;
     font-size: 45px;
     color: #494949;
 }
@@ -486,7 +465,7 @@ nav ul li a:hover {
 
 .workImgHeader {
     grid-area: workImgHeader;
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
     color: #6f6f6e;
     font-size: 20px;
 }
@@ -509,7 +488,7 @@ nav ul li a:hover {
 
 .cretiveHeader {
     grid-area: cretiveHeader;
-    font-family: Montserrat Bold, sans-serif;
+    font-family: "Montserrat Bold", sans-serif;
     font-size: 45px;
     color: #494949;
 }
@@ -524,9 +503,7 @@ nav ul li a:hover {
 }
 
 .heartTreatmentHead {
-    background-image: url(../img/heartPoint.png);
-    background-repeat: no-repeat;
-    background-position: left 15px center;
+    background: url(../img/heartPoint.png) no-repeat left 15px center;
     background-size: 45px;
     padding-left: 90px;
     grid-area: heartTreatmentHead;
@@ -534,7 +511,7 @@ nav ul li a:hover {
     border: 0;
     border-radius: 50px;
     color: white;
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
     font-size: 20px;
     line-height: 55px;
 }
@@ -546,9 +523,7 @@ nav ul li a:hover {
 }
 
 .heartTreatment {
-    background-image: url(../img/heartPoint.png);
-    background-repeat: no-repeat;
-    background-position: left 15px center;
+    background: url(../img/heartPoint.png) no-repeat left 15px center;
     background-size: 45px;
     padding-left: 90px;
     grid-area: heartTreatmentHead;
@@ -556,7 +531,7 @@ nav ul li a:hover {
     border: 0;
     border-radius: 50px;
     color: #494949;
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
     font-size: 20px;
     line-height: 55px;
 }
@@ -567,7 +542,7 @@ nav ul li a:hover {
 }
 
 .workImgData {
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
     color: #0087be;
     margin: 15px 0;
     font-size: 15px;
@@ -706,7 +681,7 @@ footer {
     border-bottom: 1px solid white;
     padding-left: 10px;
     margin: 15px 0;
-    font-family: Monserrat Medium, sans-serif;
+    font-family: "Monserrat Medium", sans-serif;
     font-size: 16px;
 }
 
@@ -715,7 +690,7 @@ footer {
     border: 0;
     border-bottom: 1px solid white;
     padding-left: 10px;
-    font-family: Monserrat Medium, sans-serif;
+    font-family: "Monserrat Medium", sans-serif;
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -729,7 +704,7 @@ footer {
     border: 0;
     border-radius: 30px;
     margin: 0 auto;
-    font-family: Monserrat Medium, sans-serif;
+    font-family: "Monserrat Medium", sans-serif;
     font-size: 16px;
 }
 
