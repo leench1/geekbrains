@@ -877,6 +877,7 @@ footer {
 .enquiryForm input[type="submit"]:hover {
     background-color: #2f788e;
     cursor: pointer;
+    box-shadow: 4px 11px 30px 0px rgba(255, 255, 255, 0.2);
 }
 
 
