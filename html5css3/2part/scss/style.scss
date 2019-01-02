@@ -35,318 +35,356 @@
 
 header {
     padding: 50px;
+
+    .headerRow {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-self: center;
+        grid-template-areas:
+            "headerLogo workTime mailUs callUs";
+
+        .headerLogo {
+            grid-area: headerLogo;
+        }
+
+        .workTime {
+            background: url(../img/clock.svg) no-repeat left center;
+            background-size: contain;
+            padding-left: 50px;
+            font-size: 15px;
+            line-height: 22px;
+            color: #6a6a6a;
+            grid-area: workTime;
+            font-family: OpenSans-Regular, sans-serif;
+
+            .bold {
+                font-weight: 700;
+            }
+        }
+
+        .mailUs {
+            background: url(../img/email.svg) no-repeat left center;
+            background-size: contain;
+            padding-left: 50px;
+            grid-area: mailUs;
+            font-size: 15px;
+            line-height: 22px;
+            color: #6a6a6a;
+            font-family: OpenSans-Regular, sans-serif;
+        }
+
+        .callUs {
+            background: url(../img/smartphone.svg) no-repeat left center;
+            background-size: contain;
+            padding-left: 50px;
+            grid-area: callUs;
+            font-size: 15px;
+            line-height: 22px;
+            color: #6a6a6a;
+            font-family: OpenSans-Regular, sans-serif;
+        }
+
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        ul li {
+            float: left;
+            list-style-type: none;
+
+            a {
+                padding: 15px;
+                font-family: OpenSans-Bold, sans-serif;
+                font-size: 20px;
+                color: #6c6c6c;
+                text-decoration: none;
+
+                &:hover {
+                    color: #262626;
+                    text-shadow: #262626 1px 1px;
+                }
+            }
+        }
+    }
+
+    .socialIcons {
+        .facebook {
+            margin-left: 10px;
+            float: left;
+            height: 20px;
+            width: 20px;
+            background-image: url(../img/facebook-letter-logo.svg);
+            background-size: contain;
+
+        }
+
+        .googlePlus {
+            margin-left: 10px;
+            float: left;
+            height: 20px;
+            width: 20px;
+            background-image: url(../img/google-plus-logo.svg);
+            background-size: contain;
+        }
+
+        .vk {
+            margin-left: 10px;
+            float: left;
+            height: 20px;
+            width: 20px;
+            background-image: url(../img/vk-social-logotype.svg);
+            background-size: contain;
+        }
+
+        .youTube {
+            margin-left: 10px;
+            float: left;
+            height: 20px;
+            width: 20px;
+            background-image: url(../img/youtube-logo.svg);
+            background-size: contain;
+        }
+
+        .linkId {
+            float: left;
+            margin-left: 10px;
+            height: 20px;
+            width: 20px;
+            background-image: url(../img/linkedin-logo.svg);
+            background-size: contain;
+        }
+    }
 }
 
-.headerRow {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    justify-self: center;
-    grid-template-areas:
-        "headerLogo workTime mailUs callUs";
+
+body {
+    .medicalImg {
+        width: 100%;
+        height: 640px;
+        background: url(../img/background_header.png) no-repeat center center;
+        background-size: cover;
+
+        .medicalPlanInside {
+            width: 80%;
+            margin: 0 auto;
+            height: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .medicalContent {
+                text-align: center;
+
+                .medicalHeader {
+                    font-family: "Montserrat Medium", sans-serif;
+                    font-size: 47.69px;
+                    color: #474747;
+                }
+
+                .medicalText {
+                    margin: 30px;
+                    font-family: OpenSans-Regular, sans-serif;
+                    color: #3f3f3f;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                button {
+                    padding: 20px;
+                    border: 0;
+                    border-radius: 30px;
+                    background-color: #1a9bdc;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: OpenSans-Bold, sans-serif;
+                    font-size: 17px;
+
+                    &:hover {
+                        background-color: #2f788e;
+                        cursor: pointer;
+                        box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+                    }
+                }
+            }
+        }
+    }
+
+    .medicalSpec {
+        color: white;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to right, #43b1d2, #37c3a8);
+
+        .specGrid {
+            width: 95%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(150px, 1fr));
+
+            .specUnit {
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .specImg {
+                    text-align: center;
+
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+                }
+
+                .unitHeader {
+                    font-family: "Montserrat Bold", sans-serif;
+                    font-size: 30px;
+                    text-align: center;
+                    margin: 25px 0;
+                }
+
+                .unitText {
+                    font-family: OpenSans-Regular, sans-serif;
+                    color: #ffffff;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .whyChoose {
+        width: 1200px;
+        margin: 0 auto;
+
+        .whyChooseHeader {
+            margin-top: 100px;
+            font-family: "Montserrat Bold", sans-serif;
+            color: #494949;
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .whyChooseText {
+            width: 65%;
+            margin: 30px auto;
+            font-family: OpenSans-Regular, sans-serif;
+            color: #6a6a6a;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .whyChooseGrid {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 337px 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 25px;
+
+            .whyChooseUnit {
+                display: flex;
+                flex-direction: column;
+
+                .whyUnitHeader {
+                    font-family: "Montserrat Bold", sans-serif;
+                    color: #6f6f6e;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-align: left;
+                    line-height: 75px;
+                    padding-left: 100px;
+
+                }
+
+                .choose1 {
+                    background: url(../img/why_choose1.png) no-repeat left center;
+                }
+
+                .choose2 {
+                    background: url(../img/why_choose2.png) no-repeat left center;
+                }
+
+                .choose3 {
+                    background: url(../img/why_choose3.png) no-repeat left center;
+                }
+
+                .choose4 {
+                    background: url(../img/why_choose4.png) no-repeat left center;
+                }
+
+                .whyUnitText {
+                    font-family: OpenSans-Regular, sans-serif;
+                    color: #6a6a6a;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: left;
+                    padding-top: 15px;
+                }
+            }
+
+            .whyChooseImg {
+                height: 598px;
+                background: url(../img/choose_doctor.png) no-repeat center bottom;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+        }
+    }
 }
 
-.headerLogo {
-    grid-area: headerLogo;
-}
 
-.bold {
-    font-weight: 700;
-}
 
-.workTime {
-    background: url(../img/clock.svg) no-repeat left center;
-    background-size: contain;
-    padding-left: 50px;
-    font-size: 15px;
-    line-height: 22px;
-    color: #6a6a6a;
-    grid-area: workTime;
-    font-family: OpenSans-Regular, sans-serif;
-}
 
-.mailUs {
-    background: url(../img/email.svg) no-repeat left center;
-    background-size: contain;
-    padding-left: 50px;
-    grid-area: mailUs;
-    font-size: 15px;
-    line-height: 22px;
-    color: #6a6a6a;
-    font-family: OpenSans-Regular, sans-serif;
-}
 
-.callUs {
-    background: url(../img/smartphone.svg) no-repeat left center;
-    background-size: contain;
-    padding-left: 50px;
-    grid-area: callUs;
-    font-size: 15px;
-    line-height: 22px;
-    color: #6a6a6a;
-    font-family: OpenSans-Regular, sans-serif;
-}
 
-hr {
-    margin: 30px 0;
-}
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-nav ul li {
-    float: left;
-    list-style-type: none;
-}
 
-nav ul li a {
-    padding: 15px;
-    font-family: OpenSans-Bold, sans-serif;
-    font-size: 20px;
-    color: #6c6c6c;
-    text-decoration: none;
-}
 
-nav ul li a:hover {
-    color: #262626;
-    text-shadow: #262626 1px 1px;
-}
 
-.facebook {
-    margin-left: 10px;
-    float: left;
-    height: 20px;
-    width: 20px;
-    background-image: url(../img/facebook-letter-logo.svg);
-    background-size: contain;
 
-}
 
-.googlePlus {
-    margin-left: 10px;
-    float: left;
-    height: 20px;
-    width: 20px;
-    background-image: url(../img/google-plus-logo.svg);
-    background-size: contain;
-}
 
-.vk {
-    margin-left: 10px;
-    float: left;
-    height: 20px;
-    width: 20px;
-    background-image: url(../img/vk-social-logotype.svg);
-    background-size: contain;
-}
 
-.youTube {
-    margin-left: 10px;
-    float: left;
-    height: 20px;
-    width: 20px;
-    background-image: url(../img/youtube-logo.svg);
-    background-size: contain;
 
-}
 
-.linkId {
-    float: left;
-    margin-left: 10px;
-    height: 20px;
-    width: 20px;
-    background-image: url(../img/linkedin-logo.svg);
-    background-size: contain;
-}
 
-.medicalImg {
-    width: 100%;
-    height: 640px;
-    background: url(../img/background_header.png) no-repeat center center;
-    background-size: cover;
 
-}
 
-.medicalPlanInside {
-    width: 80%;
-    margin: 0 auto;
-    height: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
 
-.medicalContent {
-    text-align: center;
-}
 
-.medicalContent button {
-    padding: 20px;
-    border: 0;
-    border-radius: 30px;
-    background-color: #1a9bdc;
-    color: white;
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
-    font-size: 17px;
-}
 
-.medicalContent button:hover {
-    background-color: #2f788e;
-    cursor: pointer;
-    box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2);
-}
 
-.medicalHeader {
-    font-family: "Montserrat Medium", sans-serif;
-    font-size: 47.69px;
-    color: #474747;
-}
 
-.medicalText {
-    margin: 30px;
-    font-family: OpenSans-Regular, sans-serif;
-    color: #3f3f3f;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 30px;
-}
 
-.medicalSpec {
-    color: white;
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(to right, #43b1d2, #37c3a8);
-}
 
-.specGrid {
-    width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr));
-}
 
-.specUnit {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.specImg {
-    text-align: center;
-}
 
-.specImg img {
-    width: 75px;
-    height: 75px;
-}
 
-.unitHeader {
-    font-family: "Montserrat Bold", sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin: 25px 0;
-}
 
-.unitText {
-    font-family: OpenSans-Regular, sans-serif;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-}
 
-.whyChoose {
-    width: 1200px;
-    margin: 0 auto;
-}
 
-.whyChooseGrid {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 337px 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 25px;
-}
-
-.whyChooseUnit {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.whyChooseHeader {
-    margin-top: 100px;
-    font-family: "Montserrat Bold", sans-serif;
-    color: #494949;
-    font-size: 45px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.whyChooseText {
-    width: 65%;
-    margin: 30px auto;
-    font-family: OpenSans-Regular, sans-serif;
-    color: #6a6a6a;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-}
-
-.whyUnitHeader {
-    font-family: "Montserrat Bold", sans-serif;
-    color: #6f6f6e;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: left;
-    line-height: 75px;
-    padding-left: 100px;
-}
-
-.choose1 {
-    background: url(../img/why_choose1.png) no-repeat left center;
-}
-
-.choose2 {
-    background: url(../img/why_choose2.png) no-repeat left center;
-}
-
-.choose3 {
-    background: url(../img/why_choose3.png) no-repeat left center;
-}
-
-.choose4 {
-    background: url(../img/why_choose4.png) no-repeat left center;
-}
-
-.whyUnitText {
-    font-family: OpenSans-Regular, sans-serif;
-    color: #6a6a6a;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    padding-top: 15px;
-}
-
-.whyChooseImg {
-    height: 598px;
-    background: url(../img/choose_doctor.png) no-repeat center bottom;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
 
 .achievements {
     width: 100%;
@@ -877,7 +915,6 @@ footer {
 .enquiryForm input[type="submit"]:hover {
     background-color: #2f788e;
     cursor: pointer;
-    box-shadow: 4px 11px 30px 0px rgba(255, 255, 255, 0.2);
 }
 
 
