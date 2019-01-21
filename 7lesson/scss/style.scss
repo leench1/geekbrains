@@ -1,0 +1,40 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logoAndNav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    a {
+        text-decoration: none;
+        font-family: $mainFont;
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0 10px;
+
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
