@@ -569,31 +569,31 @@ body .content main .achievements .achievementsGrid .achievementUnit .img1 {
 body .content main .achievements .achievementsGrid .achievementUnit .img1:hover {
   animation: wobble-hor-bottom 0.8s both;
 }
-body .content main .achievements .achievementsGrid .img2 {
+body .content main .achievements .achievementsGrid .achievementUnit .img2 {
   width: 90px;
   height: 90px;
   background: url(../img/achievement2.png) no-repeat center center;
   background-size: contain;
 }
-body .content main .achievements .achievementsGrid .img2:hover {
+body .content main .achievements .achievementsGrid .achievementUnit .img2:hover {
   animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
-body .content main .achievements .img3 {
+body .content main .achievements .achievementsGrid .achievementUnit .img3 {
   width: 90px;
   height: 90px;
   background: url(../img/achievement3.png) no-repeat center center;
   background-size: contain;
 }
-body .content main .achievements .img3:hover {
+body .content main .achievements .achievementsGrid .achievementUnit .img3:hover {
   animation: vibrate-1 0.3s linear infinite both;
 }
-body .content main .achievements .img4 {
+body .content main .achievements .achievementsGrid .achievementUnit .img4 {
   width: 90px;
   height: 90px;
   background: url(../img/achievement4.png) no-repeat center center;
   background-size: contain;
 }
-body .content main .achievements .img4:hover {
+body .content main .achievements .achievementsGrid .achievementUnit .img4:hover {
   animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
 body .content main .achievements .achievementDigit {
@@ -836,7 +836,7 @@ body .gallery .galleryImg .galleryUnit img {
   transition-duration: .5s;
   transform: rotateX(0deg);
   transition-timing-function: linear;
-  transition-delay: 0.5s;
+  transition-delay: .5s;
 }
 body .gallery .galleryImg .galleryUnit:hover img {
   transform: rotateX(-90deg);

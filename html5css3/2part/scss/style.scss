@@ -173,7 +173,6 @@ body {
                         font-weight: 700;
                     }
                 }
-
             }
 
             hr {
@@ -184,8 +183,6 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
-
 
                 @media (max-width: 767px) {
                     flex-direction: column;
@@ -236,16 +233,13 @@ body {
                 .youTube {
                     @extend %socialicon;
                     background-image: url(../img/youtube-logo.svg);
-
                 }
 
                 .linkId {
                     @extend %socialicon;
                     background-image: url(../img/linkedin-logo.svg);
-
                 }
             }
-
         }
 
         main {
@@ -255,9 +249,7 @@ body {
                 height: 640px;
                 background: url(../img/background_header.png) no-repeat center center;
                 background-size: cover;
-
                 animation: headerAnimation 50s ease infinite 5s;
-                ;
 
                 .medicalPlanInside {
                     width: 80%;
@@ -431,7 +423,6 @@ body {
                             text-align: left;
                             line-height: 75px;
                             padding-left: 100px;
-
                         }
 
                         .choose1 {
@@ -533,43 +524,41 @@ body {
                             &:hover {
 
                                 animation: wobble-hor-bottom 0.8s both;
-
                             }
                         }
-                    }
 
-                    .img2 {
-                        width: 90px;
-                        height: 90px;
-                        background: url(../img/achievement2.png) no-repeat center center;
-                        background-size: contain;
+                        .img2 {
+                            width: 90px;
+                            height: 90px;
+                            background: url(../img/achievement2.png) no-repeat center center;
+                            background-size: contain;
 
-                        &:hover {
-                            animation: pulsate-fwd 0.5s ease-in-out infinite both;
+                            &:hover {
+                                animation: pulsate-fwd 0.5s ease-in-out infinite both;
+                            }
                         }
-                    }
-                }
 
-                .img3 {
-                    width: 90px;
-                    height: 90px;
-                    background: url(../img/achievement3.png) no-repeat center center;
-                    background-size: contain;
+                        .img3 {
+                            width: 90px;
+                            height: 90px;
+                            background: url(../img/achievement3.png) no-repeat center center;
+                            background-size: contain;
 
-                    &:hover {
-                        animation: vibrate-1 0.3s linear infinite both;
-                    }
+                            &:hover {
+                                animation: vibrate-1 0.3s linear infinite both;
+                            }
+                        }
 
-                }
+                        .img4 {
+                            width: 90px;
+                            height: 90px;
+                            background: url(../img/achievement4.png) no-repeat center center;
+                            background-size: contain;
 
-                .img4 {
-                    width: 90px;
-                    height: 90px;
-                    background: url(../img/achievement4.png) no-repeat center center;
-                    background-size: contain;
-
-                    &:hover {
-                        animation: pulsate-fwd 0.5s ease-in-out infinite both;
+                            &:hover {
+                                animation: pulsate-fwd 0.5s ease-in-out infinite both;
+                            }
+                        }
                     }
                 }
 
@@ -645,7 +634,6 @@ body {
                     "button";
             }
 
-
             .workHeader {
                 grid-area: workHeader;
                 font-family: "Montserrat Bold", sans-serif;
@@ -702,8 +690,6 @@ body {
                 height: 210px;
                 grid-area: workImgRight;
                 background-image: url(../img/work_img2.jpg);
-
-
             }
 
             .workDataRight {
@@ -772,7 +758,6 @@ body {
                         margin-top: 10px;
                         margin-bottom: 10px;
                     }
-
                 }
             }
 
@@ -797,7 +782,6 @@ body {
                     box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
                 }
             }
-
         }
     }
 
@@ -856,21 +840,18 @@ body {
                 position: relative;
                 perspective: 500px;
 
-
                 img {
                     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 1.5);
                     transition-duration: .5s;
                     transform: rotateX(0deg);
                     transition-timing-function: linear;
-                    transition-delay: 0.5s;
-
+                    transition-delay: .5s;
                 }
 
                 &:hover img {
                     transform: rotateX(-90deg);
                     transition-delay: 0s;
                 }
-
 
                 .backGalleryText {
                     transform: rotateX(90deg);
@@ -887,7 +868,6 @@ body {
                     text-align: justify;
                     width: inherit;
                     height: inherit;
-
                 }
 
                 &:hover .backGalleryText {
@@ -895,12 +875,7 @@ body {
                     transition-delay: .5s;
                     box-shadow: inset 0 0 15px 5px rgba(255, 255, 255, 1.5);
                 }
-
-
-
-
             }
-
         }
     }
 
@@ -945,13 +920,11 @@ body {
                     text-align: center;
                     position: relative;
 
-
                     img {
                         width: 249px;
                         height: 249px;
                         transition-duration: .5s;
                         animation: roll-in-blurred-right 0.85s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-
                     }
 
                     &:hover img {
@@ -992,7 +965,6 @@ body {
                         width: 249px;
                         height: 249px;
                     }
-
                 }
             }
 
@@ -1028,7 +1000,6 @@ body {
                     @extend %socialicon;
                     background-image: url(../img/vk-social-logotype.svg);
                 }
-
 
                 width: 110px;
                 margin: 0 auto;
@@ -1096,7 +1067,6 @@ body {
     }
 }
 
-
 footer {
     width: 100%;
     height: 751px;
@@ -1139,8 +1109,6 @@ footer {
             line-height: 24px;
             text-align: left;
 
-
-
             .email {
                 background: url(../img/footer_mail.png) no-repeat left center;
                 padding-left: 60px;
@@ -1156,7 +1124,6 @@ footer {
                 background: url(../img/footer_adress.png) no-repeat left center;
                 padding-left: 60px;
             }
-
         }
 
         .gridHeader {
@@ -1250,7 +1217,6 @@ footer {
                     @media (max-width: 767px) {
                         width: 75%;
                     }
-
                 }
 
                 textarea {
@@ -1296,11 +1262,8 @@ footer {
                         cursor: pointer;
                     }
                 }
-
             }
-
         }
-
     }
 
     .copyRight {
