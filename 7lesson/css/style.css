@@ -2,18 +2,22 @@
   font-family: "OpenSans-Regular", sans-serif;
   src: url(../fonts/OpenSans-Regular-ttf); }
 
+/* line 3, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 * {
   margin: 0;
   padding: 0; }
 
+/* line 8, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 .container {
   width: 1500px;
   margin: 0 auto; }
 
+/* line 13, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 header {
   width: 100%;
   padding: 20px 0; }
 
+/* line 18, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 .logoAndNav {
   display: flex;
   flex-flow: row wrap;
@@ -21,6 +25,7 @@ header {
   align-items: center;
   margin: 30px 0; }
 
+/* line 27, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 .nav a {
   text-decoration: none;
   font-family: "OpenSans-Regular", sans-serif;
@@ -28,20 +33,28 @@ header {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 0 10px;
-  transition-duration: .5s; }
+  padding: 10px 10px;
+  transition-duration: .5s;
+  border: 1px solid white; }
+  /* line 38, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
   .nav a:hover {
-    color: #4e26fd; }
+    color: #4e26fd;
+    border: 1px solid black;
+    border-radius: 10px; }
 
+/* line 46, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 .imgLayer {
   display: flex;
   flex-flow: row wrap; }
+  /* line 50, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
   .imgLayer .leftImg img {
     height: inherit; }
+  /* line 54, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
   .imgLayer .rightImg {
     display: flex;
     flex-direction: column; }
 
+/* line 60, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
 .textImgInside {
   font-family: "OpenSans-Regular", sans-serif;
   font-weight: 700;
@@ -50,14 +63,211 @@ header {
   line-height: 50px;
   transform-origin: 0 0;
   transform: scaley(2); }
+  /* line 69, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
   .textImgInside .firstLine {
     color: white;
-    margin-top: -100px;
+    margin-top: -95px;
     margin-left: 40px;
     letter-spacing: 5px; }
+  /* line 76, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
   .textImgInside .secondLine {
     font-stretch: extra-condensed;
     letter-spacing: 3px;
     margin-left: 40px;
     font-size: 50px;
     font-weight: 800; }
+
+/* line 85, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.bookNow {
+  height: 102px;
+  width: 1141px;
+  margin: 30px auto;
+  background: #1c1c1c;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "OpenSans-Regular", sans-serif;
+  border-bottom: 15px solid #4e26fd; }
+  /* line 97, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .bookNow input {
+    padding: 10px;
+    margin-right: 15px;
+    color: black;
+    font-size: 16px;
+    float: left; }
+  /* line 105, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .bookNow button {
+    background: #4e26fd;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: condensed;
+    transition-duration: .5s; }
+    /* line 118, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .bookNow button:hover {
+      background: white;
+      color: #4e26fd;
+      cursor: pointer;
+      transform: scale(1.1); }
+
+/* line 127, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.winningHotels {
+  width: 1141px;
+  margin: 100px auto;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #010101; }
+  /* line 133, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winningHotels .hotelsHead {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0; }
+  /* line 141, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winningHotels .hotelInside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    /* line 146, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winningHotels .hotelInside .hotelUnit {
+      max-width: 353px;
+      text-align: center; }
+      /* line 150, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winningHotels .hotelInside .hotelUnit:nth-child(-3n+5) {
+        padding: 0 40px; }
+      /* line 154, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winningHotels .hotelInside .hotelUnitHead {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 15px 0; }
+      /* line 160, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winningHotels .hotelInside .hotelUnitText {
+        line-height: 20px;
+        margin-bottom: 15px; }
+
+/* line 168, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.btnMore {
+  font-family: "OpenSans-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  background: transparent;
+  border: 1px solid #4e26fd;
+  color: #4e26fd;
+  padding: 10px 35px;
+  margin: 30px;
+  transition-duration: .5s; }
+  /* line 180, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .btnMore:hover {
+    background: #4e26fd;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+    border-radius: 10px; }
+
+/* line 189, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.winterActivities {
+  width: 1500px;
+  margin: 0 auto;
+  font-family: "OpenSans-Regular", sans-serif; }
+  /* line 194, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winterActivities .activitiesHead {
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: condensed; }
+  /* line 203, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winterActivities .activitiesInside {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+    /* line 208, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winterActivities .activitiesInside .activitiesUnit {
+      width: 300px;
+      height: 597px;
+      position: relative; }
+      /* line 213, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnit img {
+        height: inherit; }
+      /* line 217, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnitHead {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        font-stretch: extra-condensed;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 80px;
+        left: 20px; }
+      /* line 228, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnitText {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        color: white;
+        line-height: 25px; }
+      /* line 236, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnit .shadowBox {
+        position: absolute;
+        bottom: 0;
+        height: inherit;
+        width: inherit;
+        box-shadow: inset 0px -150px 195px -10px rgba(0, 0, 0, 0.8); }
+
+/* line 247, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.deluxeRooms {
+  width: 1141px;
+  margin: 100px auto;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #010101; }
+  /* line 253, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRoomsHead {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-stretch: condensed; }
+  /* line 262, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRoomsInside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px 0;
+    line-height: 20px; }
+    /* line 269, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .deluxeRoomsInside .leftPartRoom {
+      display: flex;
+      flex-flow: column wrap;
+      width: 242px; }
+  /* line 278, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .deluxeRoomsUnit:first-child {
+    margin-bottom: 15px; }
+  /* line 282, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .deluxeRoomsUnitHead {
+    font-weight: 700;
+    margin: 15px 0; }
+  /* line 288, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .centerPartRoom {
+    display: flex;
+    flex-flow: column wrap;
+    width: 579px;
+    margin: 0 35px;
+    text-align: justify; }
+  /* line 296, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .rightPartRoom {
+    display: flex;
+    flex-flow: column wrap;
+    width: 242px; }
+
+/* line 303, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.winterWeather {
+  background: url(../img/winter_weather.jpg) no-repeat center center; }
+
+/*# sourceMappingURL=../css/style.map */
