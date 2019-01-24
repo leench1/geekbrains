@@ -1,4 +1,5 @@
 @import "variables";
+@import "adaptive";
 
 * {
     margin: 0;
@@ -8,6 +9,15 @@
 .container {
     width: 1500px;
     margin: 0 auto;
+    font-family: $mainFont;
+
+    @include respondTo(lg-desktops) {
+        width: 1150px;
+    }
+
+    @include respondTo(small-desktops) {
+        width: 1084px;
+    }
 }
 
 header {
@@ -26,7 +36,6 @@ header {
 .nav {
     a {
         text-decoration: none;
-        font-family: $mainFont;
         color: black;
         font-size: 16px;
         text-transform: uppercase;
@@ -58,7 +67,6 @@ header {
 }
 
 .textImgInside {
-    font-family: $mainFont;
     font-weight: 700;
     font-size: 70px;
     text-transform: uppercase;
@@ -91,7 +99,6 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    font-family: $mainFont;
     border-bottom: 15px solid #4e26fd;
 
     input {
@@ -127,7 +134,6 @@ header {
 .winningHotels {
     width: 1141px;
     margin: 100px auto;
-    font-family: $mainFont;
     color: #010101;
 
     .hotelsHead {
@@ -166,7 +172,6 @@ header {
 }
 
 .btnMore {
-    font-family: $mainFont;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
@@ -189,7 +194,22 @@ header {
 .winterActivities {
     width: 1500px;
     margin: 0 auto;
-    font-family: $mainFont;
+
+    @include respondTo(lg-desktops) {
+        width: 1141px;
+    }
+
+    @include respondTo(small-desktops) {
+        width: 1084px;
+    }
+
+    @include respondTo(tablets) {
+        width: 908px;
+    }
+
+    @media (max-width: 767px) {
+        width: 568px;
+    }
 
     .activitiesHead {
         margin: 30px;
@@ -205,10 +225,37 @@ header {
         flex-flow: row nowrap;
         justify-content: center;
 
+        @media (max-width: 1499px) {
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        /*  @include respondTo(lg-desktops) {
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        
+        @include respondTo(small-desktops) {
+            flex-flow: row wrap;
+            justify-content: space-around;
+        } */
+
         .activitiesUnit {
             width: 300px;
             height: 597px;
             position: relative;
+
+            @include respondTo(lg-desktops) {
+                &:nth-child(n+4) {
+                    margin-top: 20px;
+                }
+            }
+
+            @include respondTo(small-desktops) {
+                &:nth-child(n+4) {
+                    margin-top: 20px;
+                }
+            }
 
             img {
                 height: inherit;
@@ -247,7 +294,6 @@ header {
 .deluxeRooms {
     width: 1141px;
     margin: 100px auto;
-    font-family: $mainFont;
     color: #010101;
 
     &Head {
@@ -301,5 +347,194 @@ header {
 }
 
 .winterWeather {
+    height: 554px;
+    width: 1500px;
     background: url(../img/winter_weather.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    .winterWeatherInside {
+        margin-right: 200px;
+        margin-top: 100px;
+        width: 600px;
+
+
+        &Head {
+            color: white;
+            font-size: 130px;
+            text-transform: uppercase;
+            font-stretch: extra-condensed;
+            font-weight: 700;
+            line-height: 100px;
+        }
+
+        &Text {
+            clear: both;
+            color: white;
+            line-height: 30px;
+            padding: 30px 0;
+        }
+
+        .btnMoreWinter {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            background: #4e26fd;
+            border: 0;
+            color: white;
+            padding: 10px 55px;
+            margin: 30px;
+            transition-duration: .5s;
+
+            &:hover {
+                background: #4e26fd;
+                color: white;
+                cursor: pointer;
+                transform: scale(1.2);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.news {
+    width: 1141px;
+    margin: 100px auto;
+
+    &Head {
+        font-size: 112px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-stretch: condensed;
+        text-align: center;
+    }
+
+    &Inside {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 50px 0;
+
+        &Unit {
+            display: flex;
+            flex-flow: column wrap;
+            width: 353px;
+
+            &:nth-child(2) {
+                padding: 0 35px;
+                margin-bottom: 20px;
+            }
+
+            &Head {
+                font-weight: 700;
+                margin: 15px 0;
+            }
+
+            &Text {
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+footer {
+    .footerInside {
+        width: 1500px;
+        height: 311px;
+        background: #252525;
+        color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .leftPartFooter {
+            .contacts {
+                margin: 15px 0;
+
+                .adress {
+                    background: url(../img/geo.png) no-repeat left center;
+                    padding-left: 25px;
+                }
+
+                .phoneNumber {
+                    background: url(../img/phone.png) no-repeat left center;
+                    padding-left: 25px;
+                    margin: 10px 0;
+                }
+
+                .email {
+                    background: url(../img/mail.png) no-repeat left center;
+                    padding-left: 25px;
+                    margin-left: -3px;
+                }
+            }
+        }
+
+        .centerPartFooter {
+            .footerLink {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                height: 180px;
+                width: 500px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 20px;
+                    transition-duration: .5s;
+
+                    &:hover {
+                        color: #4e26fd;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .rightPartFooter {
+            .socialIcons {
+
+                .fab {
+                    font-size: 20px;
+                    padding: 10px;
+                    border: 1px solid white;
+                    transition-duration: .3s;
+
+                    &:nth-child(n+3) {
+                        margin-left: 20px;
+                    }
+
+                    &:hover {
+                        color: #4e26fd;
+                        border: 1px solid #4e26fd;
+                        cursor: pointer;
+                    }
+                }
+
+                .fa-facebook-f {
+                    padding: 10px 15px;
+                }
+
+                &Head {
+                    text-transform: uppercase;
+                    margin: 20px 0;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .copyRight {
+        background: #252525;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
 }
