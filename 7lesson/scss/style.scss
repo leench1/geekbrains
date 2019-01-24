@@ -16,12 +16,24 @@
     }
 
     @include respondTo(small-desktops) {
-        width: 1084px;
+        width: 968px;
+    }
+
+    @include respondTo(tablets) {
+        width: 720px;
+    }
+
+    @include respondTo(mobile) {
+        width: 460px;
+    }
+
+    @include respondTo(old_mobile) {
+        width: auto;
     }
 }
 
 header {
-    width: 100%;
+
     padding: 20px 0;
 }
 
@@ -56,13 +68,22 @@ header {
     display: flex;
     flex-flow: row wrap;
 
+    @media (max-width: 1440px) {
+        justify-content: center;
+        position: relative;
+    }
+
     .leftImg img {
         height: inherit;
     }
 
     .rightImg {
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
+
+        @media (max-width: 1440px) {
+            flex-flow: row nowrap
+        }
     }
 }
 
@@ -73,6 +94,13 @@ header {
     line-height: 50px;
     transform-origin: 0 0;
     transform: scaley(2);
+
+    @media (max-width: 1440px) {
+        position: absolute;
+        top: 250px;
+        left: 70px;
+        color: white;
+    }
 
     .firstLine {
         color: white;
@@ -101,12 +129,32 @@ header {
     align-items: center;
     border-bottom: 15px solid #4e26fd;
 
+    @media (max-width: 1499px) {
+        height: 220px;
+        width: 500px;
+    }
+
+    &Form {
+        @media (max-width: 1499px) {
+            text-align: center;
+            padding: 20px 0;
+        }
+    }
+
     input {
         padding: 10px;
         margin-right: 15px;
         color: black;
         font-size: 16px;
         float: left;
+
+        @media (max-width: 1499px) {
+            float: none;
+
+            &:nth-child(n+3) {
+                margin-top: 20px;
+            }
+        }
     }
 
     button {
@@ -136,6 +184,10 @@ header {
     margin: 100px auto;
     color: #010101;
 
+    @include respondTo(small-desktops) {
+        width: 968px;
+    }
+
     .hotelsHead {
         font-size: 50px;
         font-weight: 700;
@@ -153,9 +205,19 @@ header {
             max-width: 353px;
             text-align: center;
 
-            &:nth-child(-3n+5) {
-                padding: 0 40px;
+            @media (min-width: 1200px) {
+                &:nth-child(-3n+5) {
+                    padding: 0 40px;
+                }
             }
+
+
+            @include respondTo(small-desktops) {
+                &:nth-child(even) {
+                    padding: 0 40px;
+                }
+            }
+
 
             &Head {
                 font-size: 16px;
@@ -192,24 +254,8 @@ header {
 }
 
 .winterActivities {
-    width: 1500px;
+    width: inherit;
     margin: 0 auto;
-
-    @include respondTo(lg-desktops) {
-        width: 1141px;
-    }
-
-    @include respondTo(small-desktops) {
-        width: 1084px;
-    }
-
-    @include respondTo(tablets) {
-        width: 908px;
-    }
-
-    @media (max-width: 767px) {
-        width: 568px;
-    }
 
     .activitiesHead {
         margin: 30px;
@@ -229,16 +275,6 @@ header {
             flex-flow: row wrap;
             justify-content: space-around;
         }
-
-        /*  @include respondTo(lg-desktops) {
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-        
-        @include respondTo(small-desktops) {
-            flex-flow: row wrap;
-            justify-content: space-around;
-        } */
 
         .activitiesUnit {
             width: 300px;
@@ -296,6 +332,10 @@ header {
     margin: 100px auto;
     color: #010101;
 
+    @include respondTo(small-desktops) {
+        width: 968px;
+    }
+
     &Head {
         font-size: 80px;
         font-weight: 700;
@@ -312,10 +352,28 @@ header {
         margin: 30px 0;
         line-height: 20px;
 
+        @include respondTo(small-desktops) {
+            display: grid;
+            grid-template-areas: "center center"
+                "left right";
+
+            button {
+                grid-column-start: 1;
+                grid-column-end: -1;
+            }
+
+        }
+
         .leftPartRoom {
             display: flex;
             flex-flow: column wrap;
             width: 242px;
+
+            @include respondTo(small-desktops) {
+                grid-area: left;
+                margin: 0 auto;
+
+            }
         }
     }
 
@@ -337,18 +395,27 @@ header {
         width: 579px;
         margin: 0 35px;
         text-align: justify;
+
+        @include respondTo(small-desktops) {
+            grid-area: center;
+        }
     }
 
     .rightPartRoom {
         display: flex;
         flex-flow: column wrap;
         width: 242px;
+
+        @include respondTo(small-desktops) {
+            grid-area: right;
+            margin: 0 auto
+        }
     }
 }
 
 .winterWeather {
     height: 554px;
-    width: 1500px;
+    width: inherit;
     background: url(../img/winter_weather.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
@@ -403,6 +470,10 @@ header {
     width: 1141px;
     margin: 100px auto;
 
+    @include respondTo(small-desktops) {
+        width: 968px;
+    }
+
     &Head {
         font-size: 112px;
         text-transform: uppercase;
@@ -441,7 +512,6 @@ header {
 
 footer {
     .footerInside {
-        width: 1500px;
         height: 311px;
         background: #252525;
         color: white;
@@ -484,7 +554,7 @@ footer {
                 a {
                     color: white;
                     text-decoration: none;
-                    font-weight: 700;
+                    //                    font-weight: 700;
                     text-transform: uppercase;
                     padding: 20px;
                     transition-duration: .5s;
