@@ -33,7 +33,7 @@
 }
 
 header {
-
+    width: inherit;
     padding: 20px 0;
 }
 
@@ -43,9 +43,17 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 30px 0;
+    
+    @media (max-width: 767px) {
+        flex-flow: column nowrap;
+    }
 }
 
 .nav {
+    
+    @media (max-width: 767px) {
+        
+    }
     a {
         text-decoration: none;
         color: black;
@@ -67,14 +75,24 @@ header {
 .imgLayer {
     display: flex;
     flex-flow: row wrap;
+    width: inherit;
 
     @media (max-width: 1440px) {
         justify-content: center;
         position: relative;
     }
 
-    .leftImg img {
+    .leftImg {
         height: inherit;
+
+        @include respondTo(tablets) {
+            width: inherit;
+            
+            img {
+                width: inherit;
+            }
+        }
+
     }
 
     .rightImg {
@@ -82,7 +100,11 @@ header {
         flex-flow: column wrap;
 
         @media (max-width: 1440px) {
-            flex-flow: row nowrap
+            flex-flow: row nowrap;
+        }
+        
+        @include respondTo(tablets) {
+            flex-flow: column wrap;
         }
     }
 }
@@ -128,8 +150,13 @@ header {
     justify-content: center;
     align-items: center;
     border-bottom: 15px solid #4e26fd;
+    
+    @media (min-width:1024px) and (max-width: 1199px) {
+        width: inherit;
+        height: 150px;
+    }
 
-    @media (max-width: 1499px) {
+    @media (max-width: 1023px) {
         height: 220px;
         width: 500px;
     }
@@ -142,13 +169,14 @@ header {
     }
 
     input {
+        border: 0;
         padding: 10px;
         margin-right: 15px;
         color: black;
         font-size: 16px;
         float: left;
 
-        @media (max-width: 1499px) {
+        @media (max-width: 1023px) {
             float: none;
 
             &:nth-child(n+3) {
@@ -188,6 +216,10 @@ header {
         width: 968px;
     }
 
+    @include respondTo(tablets) {
+        width: 768px;
+    }
+
     .hotelsHead {
         font-size: 50px;
         font-weight: 700;
@@ -212,10 +244,14 @@ header {
             }
 
 
-            @include respondTo(small-desktops) {
+            @media (min-width: 768px) and (max-width: 1199px) {
                 &:nth-child(even) {
                     padding: 0 40px;
                 }
+            }
+
+            @include respondTo(tablets) {
+                max-width: 340px;
             }
 
 
@@ -293,6 +329,12 @@ header {
                 }
             }
 
+            @include respondTo(tablets) {
+                &:nth-child(n+3) {
+                    margin-top: 20px;
+                }
+            }
+
             img {
                 height: inherit;
             }
@@ -331,9 +373,14 @@ header {
     width: 1141px;
     margin: 100px auto;
     color: #010101;
+    text-align: center;
 
     @include respondTo(small-desktops) {
         width: 968px;
+    }
+
+    @include respondTo(tablets) {
+        width: 720px;
     }
 
     &Head {
@@ -352,7 +399,8 @@ header {
         margin: 30px 0;
         line-height: 20px;
 
-        @include respondTo(small-desktops) {
+
+        @media (min-width: 768px) and (max-width:1199px) {
             display: grid;
             grid-template-areas: "center center"
                 "left right";
@@ -369,7 +417,7 @@ header {
             flex-flow: column wrap;
             width: 242px;
 
-            @include respondTo(small-desktops) {
+            @media (min-width: 768px) and (max-width:1199px) {
                 grid-area: left;
                 margin: 0 auto;
 
@@ -394,10 +442,11 @@ header {
         flex-flow: column wrap;
         width: 579px;
         margin: 0 35px;
-        text-align: justify;
 
-        @include respondTo(small-desktops) {
+
+        @media (min-width: 768px) and (max-width:1199px) {
             grid-area: center;
+
         }
     }
 
@@ -406,7 +455,7 @@ header {
         flex-flow: column wrap;
         width: 242px;
 
-        @include respondTo(small-desktops) {
+        @media (min-width: 768px) and (max-width:1199px) {
             grid-area: right;
             margin: 0 auto
         }
@@ -426,6 +475,10 @@ header {
         margin-right: 200px;
         margin-top: 100px;
         width: 600px;
+
+        @media (max-width: 1440px) {
+            margin-right: 20px;
+        }
 
 
         &Head {
@@ -469,9 +522,14 @@ header {
 .news {
     width: 1141px;
     margin: 100px auto;
+    text-align: center;
 
     @include respondTo(small-desktops) {
         width: 968px;
+    }
+
+    @include respondTo(tablets) {
+        width: 720px;
     }
 
     &Head {
@@ -491,11 +549,11 @@ header {
         &Unit {
             display: flex;
             flex-flow: column wrap;
-            width: 353px;
+            max-width: 353px;
 
             &:nth-child(2) {
                 padding: 0 35px;
-                margin-bottom: 20px;
+
             }
 
             &Head {
@@ -517,8 +575,13 @@ footer {
         color: white;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 100px;
         align-items: center;
+
+        @include respondTo(small-desktops) {
+            padding: 0 30px;
+        }
 
         .leftPartFooter {
             .contacts {
@@ -544,12 +607,23 @@ footer {
         }
 
         .centerPartFooter {
+            height: 180px;
+            width: 35%;
+
+            @include respondTo(small-desktops) {
+                width: 40%;
+            }
+            
             .footerLink {
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: space-between;
-                height: 180px;
-                width: 500px;
+                height: inherit;
+                
+                @include respondTo(tablets) {
+                height: 250px;
+                    justify-content: flex-start;
+            }
 
                 a {
                     color: white;

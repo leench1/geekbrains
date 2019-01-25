@@ -1,1 +1,584 @@
-@font-face{font-family:"OpenSans-Regular", sans-serif;src:url(../fonts/OpenSans-Regular-ttf)}*{margin:0;padding:0}.container{width:1500px;margin:0 auto;font-family:"OpenSans-Regular",sans-serif}@media (min-width: 1200px) and (max-width: 1440px){.container{width:1150px}}@media (min-width: 1024px) and (max-width: 1199px){.container{width:968px}}@media (min-width: 768px) and (max-width: 1023px){.container{width:720px}}@media (min-width: 480px) and (max-width: 767px){.container{width:460px}}header{padding:20px 0}.logoAndNav{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:center;margin:30px 0}.nav a{text-decoration:none;color:black;font-size:16px;text-transform:uppercase;font-weight:700;padding:10px 10px;transition-duration:.5s;border:1px solid white}.nav a:hover{color:#4e26fd;border:1px solid black;border-radius:10px}.imgLayer{display:flex;flex-flow:row wrap}@media (max-width: 1440px){.imgLayer{justify-content:center;position:relative}}.imgLayer .leftImg img{height:inherit}.imgLayer .rightImg{display:flex;flex-flow:column wrap}@media (max-width: 1440px){.imgLayer .rightImg{flex-flow:row nowrap}}.textImgInside{font-weight:700;font-size:70px;text-transform:uppercase;line-height:50px;transform-origin:0 0;transform:scaley(2)}@media (max-width: 1440px){.textImgInside{position:absolute;top:250px;left:70px;color:white}}.textImgInside .firstLine{color:white;margin-top:-95px;margin-left:40px;letter-spacing:5px}.textImgInside .secondLine{font-stretch:extra-condensed;letter-spacing:3px;margin-left:40px;font-size:50px;font-weight:800}.bookNow{height:102px;width:1141px;margin:30px auto;background:#1c1c1c;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;border-bottom:15px solid #4e26fd}@media (max-width: 1499px){.bookNow{height:220px;width:500px}}@media (max-width: 1499px){.bookNowForm{text-align:center;padding:20px 0}}.bookNow input{padding:10px;margin-right:15px;color:black;font-size:16px;float:left}@media (max-width: 1499px){.bookNow input{float:none}.bookNow input:nth-child(n+3){margin-top:20px}}.bookNow button{background:#4e26fd;color:white;padding:10px;border:0;border-radius:10px;font-size:20px;text-transform:uppercase;font-weight:700;font-stretch:condensed;transition-duration:.5s}.bookNow button:hover{background:white;color:#4e26fd;cursor:pointer;transform:scale(1.1)}.winningHotels{width:1141px;margin:100px auto;color:#010101}@media (min-width: 1024px) and (max-width: 1199px){.winningHotels{width:968px}}.winningHotels .hotelsHead{font-size:50px;font-weight:700;text-transform:uppercase;text-align:center;margin:30px 0}.winningHotels .hotelInside{display:flex;flex-flow:row wrap;justify-content:center}.winningHotels .hotelInside .hotelUnit{max-width:353px;text-align:center}@media (min-width: 1200px){.winningHotels .hotelInside .hotelUnit:nth-child(-3n+5){padding:0 40px}}@media (min-width: 1024px) and (max-width: 1199px){.winningHotels .hotelInside .hotelUnit:nth-child(even){padding:0 40px}}.winningHotels .hotelInside .hotelUnitHead{font-size:16px;font-weight:800;margin:15px 0}.winningHotels .hotelInside .hotelUnitText{line-height:20px;margin-bottom:15px}.btnMore{text-transform:uppercase;font-size:24px;font-weight:700;background:transparent;border:1px solid #4e26fd;color:#4e26fd;padding:10px 35px;margin:30px;transition-duration:.5s}.btnMore:hover{background:#4e26fd;color:white;cursor:pointer;transform:scale(1.2);border-radius:10px}.winterActivities{width:inherit;margin:0 auto}.winterActivities .activitiesHead{margin:30px;text-align:center;font-size:80px;text-transform:uppercase;font-weight:700;font-stretch:condensed}.winterActivities .activitiesInside{display:flex;flex-flow:row nowrap;justify-content:center}@media (max-width: 1499px){.winterActivities .activitiesInside{flex-flow:row wrap;justify-content:space-around}}.winterActivities .activitiesInside .activitiesUnit{width:300px;height:597px;position:relative}@media (min-width: 1200px) and (max-width: 1440px){.winterActivities .activitiesInside .activitiesUnit:nth-child(n+4){margin-top:20px}}@media (min-width: 1024px) and (max-width: 1199px){.winterActivities .activitiesInside .activitiesUnit:nth-child(n+4){margin-top:20px}}.winterActivities .activitiesInside .activitiesUnit img{height:inherit}.winterActivities .activitiesInside .activitiesUnitHead{color:white;font-size:50px;font-weight:700;font-stretch:extra-condensed;text-transform:uppercase;position:absolute;bottom:80px;left:20px}.winterActivities .activitiesInside .activitiesUnitText{position:absolute;bottom:10px;left:20px;color:white;line-height:25px}.winterActivities .activitiesInside .activitiesUnit .shadowBox{position:absolute;bottom:0;height:inherit;width:inherit;box-shadow:inset 0px -150px 195px -10px rgba(0,0,0,0.8)}.deluxeRooms{width:1141px;margin:100px auto;color:#010101}@media (min-width: 1024px) and (max-width: 1199px){.deluxeRooms{width:968px}}.deluxeRoomsHead{font-size:80px;font-weight:700;text-align:center;text-transform:uppercase;font-stretch:condensed}.deluxeRoomsInside{display:flex;flex-flow:row wrap;justify-content:center;margin:30px 0;line-height:20px}@media (min-width: 1024px) and (max-width: 1199px){.deluxeRoomsInside{display:grid;grid-template-areas:"center center" "left right"}.deluxeRoomsInside button{grid-column-start:1;grid-column-end:-1}}.deluxeRoomsInside .leftPartRoom{display:flex;flex-flow:column wrap;width:242px}@media (min-width: 1024px) and (max-width: 1199px){.deluxeRoomsInside .leftPartRoom{grid-area:left;margin:0 auto}}.deluxeRooms .deluxeRoomsUnit:first-child{margin-bottom:15px}.deluxeRooms .deluxeRoomsUnitHead{font-weight:700;margin:15px 0}.deluxeRooms .centerPartRoom{display:flex;flex-flow:column wrap;width:579px;margin:0 35px;text-align:justify}@media (min-width: 1024px) and (max-width: 1199px){.deluxeRooms .centerPartRoom{grid-area:center}}.deluxeRooms .rightPartRoom{display:flex;flex-flow:column wrap;width:242px}@media (min-width: 1024px) and (max-width: 1199px){.deluxeRooms .rightPartRoom{grid-area:right;margin:0 auto}}.winterWeather{height:554px;width:inherit;background:url(../img/winter_weather.jpg) no-repeat center center;background-size:cover;display:flex;flex-flow:row wrap;justify-content:flex-end}.winterWeather .winterWeatherInside{margin-right:200px;margin-top:100px;width:600px}.winterWeather .winterWeatherInsideHead{color:white;font-size:130px;text-transform:uppercase;font-stretch:extra-condensed;font-weight:700;line-height:100px}.winterWeather .winterWeatherInsideText{clear:both;color:white;line-height:30px;padding:30px 0}.winterWeather .winterWeatherInside .btnMoreWinter{text-transform:uppercase;font-size:24px;font-weight:700;background:#4e26fd;border:0;color:white;padding:10px 55px;margin:30px;transition-duration:.5s}.winterWeather .winterWeatherInside .btnMoreWinter:hover{background:#4e26fd;color:white;cursor:pointer;transform:scale(1.2);border-radius:10px}.news{width:1141px;margin:100px auto}@media (min-width: 1024px) and (max-width: 1199px){.news{width:968px}}.newsHead{font-size:112px;text-transform:uppercase;font-weight:700;font-stretch:condensed;text-align:center}.newsInside{display:flex;flex-flow:row wrap;justify-content:center;margin:50px 0}.newsInsideUnit{display:flex;flex-flow:column wrap;width:353px}.newsInsideUnit:nth-child(2){padding:0 35px;margin-bottom:20px}.newsInsideUnitHead{font-weight:700;margin:15px 0}.newsInsideUnitText{line-height:25px}footer .footerInside{height:311px;background:#252525;color:white;display:flex;flex-flow:row wrap;justify-content:space-around;align-items:center}footer .footerInside .leftPartFooter .contacts{margin:15px 0}footer .footerInside .leftPartFooter .contacts .adress{background:url(../img/geo.png) no-repeat left center;padding-left:25px}footer .footerInside .leftPartFooter .contacts .phoneNumber{background:url(../img/phone.png) no-repeat left center;padding-left:25px;margin:10px 0}footer .footerInside .leftPartFooter .contacts .email{background:url(../img/mail.png) no-repeat left center;padding-left:25px;margin-left:-3px}footer .footerInside .centerPartFooter .footerLink{display:flex;flex-flow:column wrap;justify-content:space-between;height:180px;width:500px}footer .footerInside .centerPartFooter .footerLink a{color:white;text-decoration:none;text-transform:uppercase;padding:20px;transition-duration:.5s}footer .footerInside .centerPartFooter .footerLink a:hover{color:#4e26fd;cursor:pointer}footer .footerInside .rightPartFooter .socialIcons .fab{font-size:20px;padding:10px;border:1px solid white;transition-duration:.3s}footer .footerInside .rightPartFooter .socialIcons .fab:nth-child(n+3){margin-left:20px}footer .footerInside .rightPartFooter .socialIcons .fab:hover{color:#4e26fd;border:1px solid #4e26fd;cursor:pointer}footer .footerInside .rightPartFooter .socialIcons .fa-facebook-f{padding:10px 15px}footer .footerInside .rightPartFooter .socialIconsHead{text-transform:uppercase;margin:20px 0;font-weight:700;font-size:16px}footer .copyRight{background:#252525;color:white;text-align:center;padding:20px 0}
+@font-face {
+  font-family: "OpenSans-Regular", sans-serif;
+  src: url(../fonts/OpenSans-Regular-ttf); }
+
+/* line 4, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 9, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.container {
+  width: 1500px;
+  margin: 0 auto;
+  font-family: "OpenSans-Regular", sans-serif; }
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    /* line 9, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .container {
+      width: 1150px; } }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* line 9, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .container {
+      width: 968px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* line 9, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .container {
+      width: 720px; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    /* line 9, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .container {
+      width: 460px; } }
+
+/* line 35, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+header {
+  width: inherit;
+  padding: 20px 0; }
+
+/* line 40, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.logoAndNav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0; }
+  @media (max-width: 767px) {
+    /* line 40, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .logoAndNav {
+      flex-flow: column nowrap; } }
+
+/* line 57, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 10px;
+  transition-duration: .5s;
+  border: 1px solid white; }
+  /* line 67, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .nav a:hover {
+    color: #4e26fd;
+    border: 1px solid black;
+    border-radius: 10px; }
+
+/* line 75, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.imgLayer {
+  display: flex;
+  flex-flow: row wrap;
+  width: inherit; }
+  @media (max-width: 1440px) {
+    /* line 75, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .imgLayer {
+      justify-content: center;
+      position: relative; } }
+  /* line 85, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .imgLayer .leftImg {
+    height: inherit; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 85, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .imgLayer .leftImg {
+        width: inherit; }
+        /* line 91, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .imgLayer .leftImg img {
+          width: inherit; } }
+  /* line 98, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .imgLayer .rightImg {
+    display: flex;
+    flex-flow: column wrap; }
+    @media (max-width: 1440px) {
+      /* line 98, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .imgLayer .rightImg {
+        flex-flow: row nowrap; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* line 98, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .imgLayer .rightImg {
+        flex-flow: column wrap; } }
+
+/* line 112, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.textImgInside {
+  font-weight: 700;
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 50px;
+  transform-origin: 0 0;
+  transform: scaley(2); }
+  @media (max-width: 1440px) {
+    /* line 112, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .textImgInside {
+      position: absolute;
+      top: 250px;
+      left: 70px;
+      color: white; } }
+  /* line 127, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .textImgInside .firstLine {
+    color: white;
+    margin-top: -95px;
+    margin-left: 40px;
+    letter-spacing: 5px; }
+  /* line 134, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .textImgInside .secondLine {
+    font-stretch: extra-condensed;
+    letter-spacing: 3px;
+    margin-left: 40px;
+    font-size: 50px;
+    font-weight: 800; }
+
+/* line 143, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.bookNow {
+  height: 102px;
+  width: 1141px;
+  margin: 30px auto;
+  background: #1c1c1c;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 15px solid #4e26fd; }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* line 143, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .bookNow {
+      width: inherit;
+      height: 150px; } }
+  @media (max-width: 1023px) {
+    /* line 143, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .bookNow {
+      height: 220px;
+      width: 500px; } }
+  @media (max-width: 1499px) {
+    /* line 164, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .bookNowForm {
+      text-align: center;
+      padding: 20px 0; } }
+  /* line 171, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .bookNow input {
+    border: 0;
+    padding: 10px;
+    margin-right: 15px;
+    color: black;
+    font-size: 16px;
+    float: left; }
+    @media (max-width: 1023px) {
+      /* line 171, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .bookNow input {
+        float: none; }
+        /* line 182, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .bookNow input:nth-child(n+3) {
+          margin-top: 20px; } }
+  /* line 188, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .bookNow button {
+    background: #4e26fd;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: condensed;
+    transition-duration: .5s; }
+    /* line 201, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .bookNow button:hover {
+      background: white;
+      color: #4e26fd;
+      cursor: pointer;
+      transform: scale(1.1); }
+
+/* line 210, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.winningHotels {
+  width: 1141px;
+  margin: 100px auto;
+  color: #010101; }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* line 210, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winningHotels {
+      width: 968px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* line 210, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winningHotels {
+      width: 768px; } }
+  /* line 223, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winningHotels .hotelsHead {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0; }
+  /* line 231, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winningHotels .hotelInside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    /* line 236, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winningHotels .hotelInside .hotelUnit {
+      max-width: 353px;
+      text-align: center; }
+      @media (min-width: 1200px) {
+        /* line 241, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .winningHotels .hotelInside .hotelUnit:nth-child(-3n+5) {
+          padding: 0 40px; } }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        /* line 248, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .winningHotels .hotelInside .hotelUnit:nth-child(even) {
+          padding: 0 40px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        /* line 236, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .winningHotels .hotelInside .hotelUnit {
+          max-width: 340px; } }
+      /* line 258, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winningHotels .hotelInside .hotelUnitHead {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 15px 0; }
+      /* line 264, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winningHotels .hotelInside .hotelUnitText {
+        line-height: 20px;
+        margin-bottom: 15px; }
+
+/* line 272, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.btnMore {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  background: transparent;
+  border: 1px solid #4e26fd;
+  color: #4e26fd;
+  padding: 10px 35px;
+  margin: 30px;
+  transition-duration: .5s; }
+  /* line 283, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .btnMore:hover {
+    background: #4e26fd;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+    border-radius: 10px; }
+
+/* line 292, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.winterActivities {
+  width: inherit;
+  margin: 0 auto; }
+  /* line 296, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winterActivities .activitiesHead {
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: condensed; }
+  /* line 305, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winterActivities .activitiesInside {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+    @media (max-width: 1499px) {
+      /* line 305, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside {
+        flex-flow: row wrap;
+        justify-content: space-around; } }
+    /* line 315, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winterActivities .activitiesInside .activitiesUnit {
+      width: 300px;
+      height: 597px;
+      position: relative; }
+      @media (min-width: 1200px) and (max-width: 1440px) {
+        /* line 321, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .winterActivities .activitiesInside .activitiesUnit:nth-child(n+4) {
+          margin-top: 20px; } }
+      @media (min-width: 1024px) and (max-width: 1199px) {
+        /* line 327, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .winterActivities .activitiesInside .activitiesUnit:nth-child(n+4) {
+          margin-top: 20px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        /* line 333, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .winterActivities .activitiesInside .activitiesUnit:nth-child(n+3) {
+          margin-top: 20px; } }
+      /* line 338, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnit img {
+        height: inherit; }
+      /* line 342, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnitHead {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+        font-stretch: extra-condensed;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 80px;
+        left: 20px; }
+      /* line 353, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnitText {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        color: white;
+        line-height: 25px; }
+      /* line 361, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterActivities .activitiesInside .activitiesUnit .shadowBox {
+        position: absolute;
+        bottom: 0;
+        height: inherit;
+        width: inherit;
+        box-shadow: inset 0px -150px 195px -10px rgba(0, 0, 0, 0.8); }
+
+/* line 372, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.deluxeRooms {
+  width: 1141px;
+  margin: 100px auto;
+  color: #010101;
+  text-align: center; }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* line 372, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .deluxeRooms {
+      width: 968px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* line 372, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .deluxeRooms {
+      width: 720px; } }
+  /* line 386, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRoomsHead {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-stretch: condensed; }
+  /* line 395, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRoomsInside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px 0;
+    line-height: 20px; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      /* line 395, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .deluxeRoomsInside {
+        display: grid;
+        grid-template-areas: "center center" "left right"; }
+        /* line 408, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .deluxeRoomsInside button {
+          grid-column-start: 1;
+          grid-column-end: -1; } }
+    /* line 415, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .deluxeRoomsInside .leftPartRoom {
+      display: flex;
+      flex-flow: column wrap;
+      width: 242px; }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        /* line 415, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        .deluxeRoomsInside .leftPartRoom {
+          grid-area: left;
+          margin: 0 auto; } }
+  /* line 430, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .deluxeRoomsUnit:first-child {
+    margin-bottom: 15px; }
+  /* line 434, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .deluxeRoomsUnitHead {
+    font-weight: 700;
+    margin: 15px 0; }
+  /* line 440, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .centerPartRoom {
+    display: flex;
+    flex-flow: column wrap;
+    width: 579px;
+    margin: 0 35px; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      /* line 440, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .deluxeRooms .centerPartRoom {
+        grid-area: center; } }
+  /* line 453, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .deluxeRooms .rightPartRoom {
+    display: flex;
+    flex-flow: column wrap;
+    width: 242px; }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      /* line 453, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .deluxeRooms .rightPartRoom {
+        grid-area: right;
+        margin: 0 auto; } }
+
+/* line 465, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.winterWeather {
+  height: 554px;
+  width: inherit;
+  background: url(../img/winter_weather.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end; }
+  /* line 474, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .winterWeather .winterWeatherInside {
+    margin-right: 200px;
+    margin-top: 100px;
+    width: 600px; }
+    @media (max-width: 1440px) {
+      /* line 474, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterWeather .winterWeatherInside {
+        margin-right: 20px; } }
+    /* line 484, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winterWeather .winterWeatherInsideHead {
+      color: white;
+      font-size: 130px;
+      text-transform: uppercase;
+      font-stretch: extra-condensed;
+      font-weight: 700;
+      line-height: 100px; }
+    /* line 493, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winterWeather .winterWeatherInsideText {
+      clear: both;
+      color: white;
+      line-height: 30px;
+      padding: 30px 0; }
+    /* line 500, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .winterWeather .winterWeatherInside .btnMoreWinter {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 700;
+      background: #4e26fd;
+      border: 0;
+      color: white;
+      padding: 10px 55px;
+      margin: 30px;
+      transition-duration: .5s; }
+      /* line 511, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .winterWeather .winterWeatherInside .btnMoreWinter:hover {
+        background: #4e26fd;
+        color: white;
+        cursor: pointer;
+        transform: scale(1.2);
+        border-radius: 10px; }
+
+/* line 522, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+.news {
+  width: 1141px;
+  margin: 100px auto;
+  text-align: center; }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* line 522, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .news {
+      width: 968px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* line 522, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .news {
+      width: 720px; } }
+  /* line 535, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .newsHead {
+    font-size: 112px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: condensed;
+    text-align: center; }
+  /* line 543, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  .newsInside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0; }
+    /* line 549, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    .newsInsideUnit {
+      display: flex;
+      flex-flow: column wrap;
+      max-width: 353px; }
+      /* line 554, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .newsInsideUnit:nth-child(2) {
+        padding: 0 35px; }
+      /* line 559, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .newsInsideUnitHead {
+        font-weight: 700;
+        margin: 15px 0; }
+      /* line 564, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      .newsInsideUnitText {
+        line-height: 25px; }
+
+/* line 572, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+footer .footerInside {
+  height: 311px;
+  background: #252525;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center; }
+  @media (min-width: 1024px) and (max-width: 1199px) {
+    /* line 572, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside {
+      padding: 0 30px; } }
+  /* line 587, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  footer .footerInside .leftPartFooter .contacts {
+    margin: 15px 0; }
+    /* line 590, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside .leftPartFooter .contacts .adress {
+      background: url(../img/geo.png) no-repeat left center;
+      padding-left: 25px; }
+    /* line 595, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside .leftPartFooter .contacts .phoneNumber {
+      background: url(../img/phone.png) no-repeat left center;
+      padding-left: 25px;
+      margin: 10px 0; }
+    /* line 601, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside .leftPartFooter .contacts .email {
+      background: url(../img/mail.png) no-repeat left center;
+      padding-left: 25px;
+      margin-left: -3px; }
+  /* line 609, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  footer .footerInside .centerPartFooter {
+    height: 180px;
+    width: 35%; }
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      /* line 609, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      footer .footerInside .centerPartFooter {
+        width: 40%; } }
+    /* line 617, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside .centerPartFooter .footerLink {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      height: inherit; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        /* line 617, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        footer .footerInside .centerPartFooter .footerLink {
+          height: 250px;
+          justify-content: flex-start; } }
+      /* line 628, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+      footer .footerInside .centerPartFooter .footerLink a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px;
+        transition-duration: .5s; }
+        /* line 636, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+        footer .footerInside .centerPartFooter .footerLink a:hover {
+          color: #4e26fd;
+          cursor: pointer; }
+  /* line 647, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  footer .footerInside .rightPartFooter .socialIcons .fab {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    transition-duration: .3s; }
+    /* line 653, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside .rightPartFooter .socialIcons .fab:nth-child(n+3) {
+      margin-left: 20px; }
+    /* line 657, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+    footer .footerInside .rightPartFooter .socialIcons .fab:hover {
+      color: #4e26fd;
+      border: 1px solid #4e26fd;
+      cursor: pointer; }
+  /* line 664, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  footer .footerInside .rightPartFooter .socialIcons .fa-facebook-f {
+    padding: 10px 15px; }
+  /* line 668, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+  footer .footerInside .rightPartFooter .socialIconsHead {
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 16px; }
+
+/* line 678, C:/Users/fedoseev/Documents/workTree/7lesson/scss/style.scss */
+footer .copyRight {
+  background: #252525;
+  color: white;
+  text-align: center;
+  padding: 20px 0; }
+
+/*# sourceMappingURL=../css/style.map */
